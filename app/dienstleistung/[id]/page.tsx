@@ -28,7 +28,11 @@ const newTab = { target: '_blank', rel: 'noopener noreferrer' }
 
 function Item({ segs }: { segs: Section['items'][number] }) {
   return segs.map((g, i) =>
-    g.href ? (
+    g.href?.startsWith('/') ? (
+      <a key={i} href={g.href}>
+        <T>{g.text}</T>
+      </a>
+    ) : g.href ? (
       <a key={i} href={g.href} {...newTab}>
         <T>{g.text}</T>
         <ExternalIcon />

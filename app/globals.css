@@ -1842,6 +1842,13 @@ main {
   max-width: 48rem;
 }
 
+/* Mobile: max 3 suggestions under search/AI */
+@media (max-width: 640px) {
+  .hero .chips > :nth-child(n + 4) {
+    display: none;
+  }
+}
+
 .chip {
   padding: 0.5rem 1rem;
   border-radius: 999px;

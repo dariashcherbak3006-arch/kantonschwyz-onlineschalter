@@ -729,7 +729,7 @@
     "items": [
      [
       {
-       "text": "Für die Wehrpflichtersatzabgabe (WPE) kann Ratenzahlung beantragt werden"
+       "text": "Wenn es gerade nicht möglich ist, den ganzen Betrag auf einmal zu zahlen, können Sie eine Ratenzahlung beantragen. Wir prüfen Ihr Gesuch in der Regel innerhalb von 5 Arbeitstagen – Sie erhalten von uns eine klare Antwort per Post."
       }
      ]
     ]
@@ -740,7 +740,7 @@
     "items": [
      [
       {
-       "text": "Ratenzahlungen führen immer zu Verzugszinsen."
+       "text": "Gut zu wissen: Bei einer Ratenzahlung fallen Verzugszinsen an. Wie hoch diese sind, sehen Sie in Ihrem Entscheid – es kommen keine weiteren Gebühren dazu."
       }
      ]
     ]
@@ -773,7 +773,11 @@
     "items": [
      [
       {
-       "text": "Für die Dienstleistung ist eine Anmeldung erforderlich."
+       "text": "Für den Antrag brauchen Sie ein Konto beim Onlineschalter. So sind Ihre Angaben und Finanzdaten geschützt. Noch kein Konto? "
+      },
+      {
+       "text": "So geht's in 2 Minuten",
+       "href": "/faq#konto"
       }
      ]
     ]
@@ -784,22 +788,28 @@
     "items": [
      [
       {
-       "text": "Sie reichen das Gesuch für eine Ratenzahlung der WPE online ein."
+       "text": "Sie reichen das Gesuch online ein – Sie brauchen dafür nur Ihre WPE-Rechnung."
       }
      ],
      [
       {
-       "text": "Das Gesuch wird geprüft."
+       "text": "Wir prüfen Ihr Gesuch, in der Regel innerhalb von 5 Arbeitstagen."
       }
      ],
      [
       {
-       "text": "Anschliessend erhalten Sie den schriftlichen Entscheid per Post."
+       "text": "Sie erhalten unseren Entscheid per Post, mit Einzahlungsscheinen, falls die Ratenzahlung bewilligt wird."
       }
-     ],
+     ]
+    ]
+   },
+   {
+    "h": "",
+    "ordered": false,
+    "items": [
      [
       {
-       "text": "Bei Bewilligung erhalten Sie die Einzahlungsscheine gemäss Entscheid per Post."
+       "text": "Sie müssen in der Zwischenzeit nichts weiter tun. Wenn Sie unsicher sind, ob Sie weiter Mahnungen erhalten, kontaktieren Sie uns – wir geben Ihnen Auskunft."
       }
      ]
     ]
@@ -821,7 +831,7 @@
     "items": [
      [
       {
-       "text": "maximal 5 Arbeitstage"
+       "text": "In der Regel innerhalb von 5 Arbeitstagen"
       }
      ]
     ]
@@ -832,7 +842,7 @@
     "items": [
      [
       {
-       "text": "Es werden Verzugszinsen fällig."
+       "text": "Bei einer Ratenzahlung fallen Verzugszinsen an – aktuell 4 % pro Jahr. Es kommen keine weiteren Gebühren dazu. Die genaue Höhe steht in Ihrem Entscheid."
       }
      ]
     ]
@@ -843,7 +853,12 @@
     "items": [
      [
       {
-       "text": "Amt für Militär, Feuer- und Zivilschutz\nWehrpflichtersatzabgabe\nSchlagstrasse 89\nPostfach 4215\n6431 Schwyz"
+       "text": "Amt für Militär, Feuer- und Zivilschutz\nWehrpflichtersatzabgabe\nSchlagstrasse 89\nPostfach 4215\n6431 Schwyz\nTel. +41 41 819 22 50"
+      }
+     ],
+     [
+      {
+       "text": "Rufen Sie uns an, wir behandeln Ihr Anliegen vertraulich."
       }
      ]
     ]
