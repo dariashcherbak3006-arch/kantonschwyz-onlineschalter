@@ -6,7 +6,7 @@ import { ExternalIcon } from './icons'
 import { useT } from './i18n'
 
 type Link = Pick<FlatService, 'title' | 'href' | 'external'>
-type Msg = { role: 'user' | 'assistant'; content: string; links?: Link[] }
+type Msg = { role: 'user' | 'assistant'; content: string; links?: Link[]; error?: boolean }
 
 // serviceId set = questions about that service page (page bot); unset = general assistant.
 export function useChat(serviceId?: number) {
@@ -31,7 +31,7 @@ export function useChat(serviceId?: number) {
     } catch {
       setMessages([
         ...next,
-        { role: 'assistant', content: t('Der Assistent ist gerade nicht erreichbar. Bitte versuchen Sie es später erneut.') }
+        { role: 'assistant', content: t('Der Assistent ist gerade nicht erreichbar. Bitte versuchen Sie es später erneut.'), error: true }
       ])
     } finally {
       setLoading(false)
@@ -74,6 +74,21 @@ export function ChatLog({ messages, loading }: { messages: Msg[]; loading: boole
         </div>
       )}
       <div ref={endRef} />
+    </div>
+  )
+}
+
+const MOODS = ['Hallo', 'Nachdenken', 'Antwort', 'Unverstaendlich']
+
+// All four GIFs stay mounted and only toggle `hidden`, so switching moods never flashes while one loads.
+export function Mascot({ messages, loading }: { messages: Msg[]; loading: boolean }) {
+  const last = messages.at(-1)
+  const mood = loading ? 'Nachdenken' : !last ? 'Hallo' : last.error ? 'Unverstaendlich' : 'Antwort'
+  return (
+    <div className="mascot" aria-hidden="true">
+      {MOODS.map((m) => (
+        <img key={m} src={`/Maskottchen_${m}.gif`} alt="" width={520} height={520} hidden={m !== mood} />
+      ))}
     </div>
   )
 }

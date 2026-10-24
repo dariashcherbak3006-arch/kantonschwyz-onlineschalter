@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { topics, services, searchServices, type Level } from '@/data/services'
 import { ExternalIcon, GridIcon, ListIcon, SearchIcon, SendIcon, SparkIcon, topicIcons } from './icons'
 import { useT } from './i18n'
-import { AiNotice, ChatLog, useChat } from './chat'
+import { AiNotice, ChatLog, Mascot, useChat } from './chat'
 import { LevelBadge } from './i18n'
 import { GemeindeSelect, useGemeinde } from './gemeinde'
 import { LEBENSLAGEN } from '@/data/lebenslagen'
@@ -19,11 +19,24 @@ export default function Hero() {
   const [level, setLevel] = useState<Level | 'all'>('all')
   // Active life situation chip: shows only the services that help in that situation
   const [life, setLife] = useState<string | null>(null)
-  const [gemeinde] = useGemeinde()
+  const [gemeinde, setGemeinde] = useGemeinde()
   const { messages, loading, ask, reset } = useChat()
   const { t } = useT()
 
   const chatting = mode === 'ai' && messages.length > 0
+
+  // "/#ki" (help card in the footer) opens the assistant
+  useEffect(() => {
+    const open = () => {
+      if (location.hash !== '#ki') return
+      setMode('ai')
+      scrollTo({ top: 0 })
+      document.getElementById('q')?.focus({ preventScroll: true })
+    }
+    open()
+    addEventListener('hashchange', open)
+    return () => removeEventListener('hashchange', open)
+  }, [])
 
   function send(text: string) {
     ask(text)
@@ -41,6 +54,14 @@ export default function Hero() {
   const hits = base.filter(
     (sv) => (level === 'all' || sv.level === level) && (!gemeinde || !sv.gemeinden || sv.gemeinden.includes(gemeinde))
   )
+
+  const filtered = !!(query || life || gemeinde || level !== 'all')
+  function resetFilters() {
+    setQuery('')
+    setLife(null)
+    setLevel('all')
+    setGemeinde('')
+  }
 
   // Shortcut: show all services, then scroll to the topic's section
   function jump(i: number) {
@@ -100,34 +121,37 @@ export default function Hero() {
 
       {chatting && <ChatLog messages={messages} loading={loading} />}
 
-      <form className={`searchbar glass ${chatting ? 'searchbar--docked' : ''}`} onSubmit={onSubmit} role="search">
-        <label htmlFor="q" className="sr-only">
-          {t(mode === 'ai' ? 'Frage an den KI-Assistenten' : 'Dienstleistung suchen')}
-        </label>
-        <span className="searchbar__icon">{mode === 'ai' ? <SparkIcon /> : <SearchIcon />}</span>
-        <input
-          id="q"
-          autoComplete="off"
-          value={query}
-          onChange={(e) => (setQuery(e.target.value), setLife(null))}
-          placeholder={t(mode === 'ai' ? 'Stellen Sie Ihre Frage …' : 'z. B. Umzug, Steuern, Hund …')}
-        />
-        {(query || (mode === 'search' && life)) && (
-          <button
-            type="button"
-            className="searchbar__clear"
-            aria-label={t('Eingabe löschen')}
-            onClick={() => (setQuery(''), setLife(null), document.getElementById('q')?.focus())}
-          >
-            ×
-          </button>
-        )}
-        {mode === 'ai' && (
-          <button type="submit" className="searchbar__send" disabled={!query.trim() || loading} aria-label={t('Senden')}>
-            <SendIcon />
-          </button>
-        )}
-      </form>
+      <div className={`searchrow ${chatting ? 'searchrow--docked' : ''}`}>
+        <form className="searchbar glass" onSubmit={onSubmit} role="search">
+          <label htmlFor="q" className="sr-only">
+            {t(mode === 'ai' ? 'Frage an den KI-Assistenten' : 'Dienstleistung suchen')}
+          </label>
+          <span className="searchbar__icon">{mode === 'ai' ? <SparkIcon /> : <SearchIcon />}</span>
+          <input
+            id="q"
+            autoComplete="off"
+            value={query}
+            onChange={(e) => (setQuery(e.target.value), setLife(null))}
+            placeholder={t(mode === 'ai' ? 'Frag Schwyzi …' : 'z. B. Umzug, Steuern, Hund …')}
+          />
+          {(query || (mode === 'search' && life)) && (
+            <button
+              type="button"
+              className="searchbar__clear"
+              aria-label={t('Eingabe löschen')}
+              onClick={() => (setQuery(''), setLife(null), document.getElementById('q')?.focus())}
+            >
+              ×
+            </button>
+          )}
+          {mode === 'ai' && (
+            <button type="submit" className="searchbar__send" disabled={!query.trim() || loading} aria-label={t('Senden')}>
+              <SendIcon />
+            </button>
+          )}
+        </form>
+        {mode === 'ai' && <Mascot messages={messages} loading={loading} />}
+      </div>
 
       {mode === 'search' && (
         <nav className="chips" aria-label={t('Lebenslagen')}>
@@ -165,10 +189,16 @@ export default function Hero() {
 
       {mode === 'search' && (
         <div className="results">
+          <h2 className="results__title">{t('Liste der Dienstleistungen')}</h2>
           <div className="results__bar">
             <p>
               {hits.length} {t(hits.length === 1 ? 'Dienstleistung' : 'Dienstleistungen')}
             </p>
+            {filtered && (
+              <button className="results__reset" onClick={resetFilters}>
+                × {t('Filter zurücksetzen')}
+              </button>
+            )}
             <GemeindeSelect />
             <div className="view-toggle glass" role="radiogroup" aria-label={t('Zuständigkeit')}>
               {(['all', 'kommunal', 'kantonal'] as const).map((l) => (
@@ -213,10 +243,10 @@ export default function Hero() {
             const Icon = topicIcons[topic.title]
             return (
               <div key={topic.title} id={`topic-${i}`} className="results__topic">
-                <h2>
+                <h3>
                   <Icon />
                   {t(topic.title)}
-                </h2>
+                </h3>
                 <ul className={view === 'cards' ? 'grid' : 'rows'}>
                   {items.map((sv) => (
                     <li key={sv.id}>

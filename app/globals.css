@@ -52,13 +52,8 @@ body {
   min-height: 100dvh;
   color: var(--ink);
   font: 1rem/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  /* Red blobs on white give the glass something to refract */
-  background:
-    radial-gradient(42rem 32rem at 8% -5%, rgba(246, 0, 0, 0.2), transparent 65%),
-    radial-gradient(36rem 30rem at 100% 15%, rgba(246, 0, 0, 0.14), transparent 65%),
-    radial-gradient(50rem 36rem at 50% 115%, rgba(246, 0, 0, 0.12), transparent 65%),
-    #fff;
-  background-attachment: fixed;
+  /* Cool, slightly grey white */
+  background: #f4f6f9;
 }
 
 button {
@@ -155,11 +150,9 @@ main:focus {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--glass-bg);
-  border-bottom: 1px solid var(--glass-edge);
-  box-shadow: var(--glass-shine), var(--shadow-soft);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(165%);
-  backdrop-filter: blur(var(--glass-blur)) saturate(165%);
+  background: #fff;
+  border-bottom: 1px solid #e3e6eb;
+  box-shadow: var(--shadow-soft);
 }
 
 .site-header__bar {
@@ -176,7 +169,7 @@ main:focus {
   width: auto;
 }
 
-.results__topic h2 .icon {
+.results__topic h3 .icon {
   color: var(--red);
 }
 
@@ -190,11 +183,9 @@ main:focus {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 1.5rem 2rem;
   padding: 2rem var(--gutter) 2.25rem;
-  background: rgba(255, 255, 255, 0.82);
-  border-bottom: 1px solid var(--glass-edge);
+  background: #fff;
+  border-bottom: 1px solid #e3e6eb;
   box-shadow: var(--shadow-soft);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(165%);
-  backdrop-filter: blur(var(--glass-blur)) saturate(165%);
   animation: drop 0.18s ease-out;
 }
 
@@ -295,6 +286,7 @@ main:focus {
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.95rem;
+  text-decoration: none;
   transition: color 0.15s;
 }
 
@@ -1155,36 +1147,17 @@ main:focus {
 
 /* ——— Gemeinde filter + availability ——— */
 
-.gemeinde-select {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+/* Reuses the language menu; only the long list needs to scroll */
+.gemeinde-select .lang__btn {
   height: 2.5rem;
-  padding: 0 0.4rem 0 0.8rem;
-  border-radius: 999px;
-  color: var(--red);
-}
-
-.gemeinde-select select {
-  appearance: none;
-  border: 0;
-  background: none;
-  padding: 0 1.3rem 0 0.1rem;
-  font: inherit;
   font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--ink);
-  cursor: pointer;
-  outline: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 7.5l5 5 5-5' fill='none' stroke='%231b1b1f' stroke-width='2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 0.9rem;
 }
 
-.gemeinde-select:focus-within {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
+.gemeinde-select .lang__menu {
+  z-index: 20;
+  max-height: min(22rem, 60vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .availability {
@@ -1407,11 +1380,8 @@ main:focus {
 
 .site-footer {
   margin-top: 4rem;
-  border-top: 1px solid var(--glass-edge);
-  background: rgba(255, 255, 255, 0.55);
-  box-shadow: var(--glass-shine);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(165%);
-  backdrop-filter: blur(var(--glass-blur)) saturate(165%);
+  border-top: 1px solid #e3e6eb;
+  background: #fff;
   font-size: 0.92rem;
 }
 
@@ -1808,10 +1778,50 @@ main {
   cursor: default;
 }
 
-.searchbar--docked {
+.searchrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: min(100%, 54rem);
+}
+
+/* Keeps the bar at its own 48rem; only shrinks when the mascot needs room */
+.searchrow .searchbar {
+  position: relative;
+  z-index: 1;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.searchrow--docked {
   position: sticky;
   bottom: 1rem;
   margin-top: auto;
+}
+
+/* Assistant mascot, right of the AI input; overhangs the bar a little */
+.mascot {
+  flex-shrink: 0;
+  width: 6rem;
+  margin: -1rem 0;
+}
+
+/* Before the first message: big, standing behind the right end of the bar with its feet hidden */
+.searchrow:not(.searchrow--docked) .mascot {
+  position: absolute;
+  right: -1rem;
+  bottom: 0.75rem;
+  width: 14rem;
+  margin: 0;
+  pointer-events: none;
+}
+
+.mascot img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* AI suggestion chips */
@@ -1939,7 +1949,15 @@ main {
 
 .results {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+.results__title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-align: center;
 }
 
 .results__bar {
@@ -1966,7 +1984,7 @@ main {
   text-align: center;
 }
 
-.results__topic h2 {
+.results__topic h3 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -2133,7 +2151,7 @@ main {
     clip: rect(0 0 0 0);
   }
 
-  .lang__btn > .icon:first-child {
+  .site-header .lang__btn > .icon:first-child {
     display: none;
   }
 }
@@ -2161,11 +2179,11 @@ main {
     height: 1.3rem;
   }
 
-  .lang__btn {
+  .site-header .lang__btn {
     padding: 0 0.5rem;
   }
 
-  .lang__btn > .icon:first-child {
+  .site-header .lang__btn > .icon:first-child {
     display: none;
   }
 
@@ -2184,6 +2202,15 @@ main {
   .searchbar {
     height: 3.75rem;
     padding-left: 1.1rem;
+  }
+
+  .mascot {
+    width: 4rem;
+  }
+
+  .searchrow:not(.searchrow--docked) .mascot {
+    right: -0.5rem;
+    width: 9.5rem;
   }
 
   .mode-switch__opt {
@@ -2207,5 +2234,112 @@ main {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* Active filters: red Gemeinde button, reset link */
+.gemeinde-select .lang__btn.is-active {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.gemeinde-select .lang__btn.is-active > .icon:first-child {
+  color: #fff;
+}
+
+.results__reset {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.results__reset:hover {
+  background: var(--red-tint);
+}
+
+/* Explainer videos (FAQ) */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.video {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.video p {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+/* "Brauchen Sie Hilfe?" card above the footer */
+.help-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 52rem;
+  margin: 4rem auto 0;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+}
+
+/* Footer margin would double the gap */
+.help-card + .site-footer {
+  margin-top: 3rem;
+}
+
+.help-card img {
+  flex-shrink: 0;
+  width: 8rem;
+  height: auto;
+}
+
+.help-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+}
+
+.help-card p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.help-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.help-card .btn-primary {
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .help-card {
+    flex-direction: column;
+    margin-inline: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .help-card__links {
+    justify-content: center;
   }
 }

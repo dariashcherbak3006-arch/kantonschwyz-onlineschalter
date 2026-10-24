@@ -10,6 +10,22 @@ const newTab = { target: '_blank', rel: 'noopener noreferrer' }
 export default function Footer() {
   const { t } = useT()
   return (
+    <>
+    <aside className="help-card glass" aria-labelledby="help-card-title">
+      <img src="/Maskottchen_Hallo.gif" alt="" width={520} height={520} />
+      <div>
+        <h2 id="help-card-title">{t('Brauchen Sie Hilfe?')}</h2>
+        <p>{t('Fragen Sie unseren KI-Assistenten oder lesen Sie die häufigen Fragen.')}</p>
+        <div className="help-card__links">
+          <a href="/#ki" className="btn-primary">
+            {t('KI-Assistent fragen')}
+          </a>
+          <a href="/faq" className="btn-link">
+            FAQ
+          </a>
+        </div>
+      </div>
+    </aside>
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand">
@@ -92,5 +108,6 @@ export default function Footer() {
       </div>
       <p className="site-footer__copy">© 2026 Kanton Schwyz</p>
     </footer>
+    </>
   )
 }

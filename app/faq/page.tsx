@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { T } from '@/components/i18n'
+import Videos from '@/components/Videos'
 
 export const metadata: Metadata = {
   title: 'FAQ – Onlineschalter Kanton Schwyz',
@@ -63,6 +64,10 @@ export default function FaqPage() {
       <p className="faq__lead">
         <T>Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.</T>
       </p>
+      <h2 id="videos">
+        <T>Erklärvideos</T>
+      </h2>
+      <Videos />
       {sections.map((sec) => (
         <div key={sec.id}>
           <h2 id={sec.id}>

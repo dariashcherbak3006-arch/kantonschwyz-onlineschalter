@@ -55,6 +55,10 @@ export default function Header() {
 
         <TextSize />
 
+        <a href="/faq" className="textsize glass">
+          FAQ
+        </a>
+
         <div className="lang">
           <button
             className="lang__btn glass"
