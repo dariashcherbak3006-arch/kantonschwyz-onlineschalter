@@ -1,7 +1,3 @@
-# kantonschwyz-onlineschalter
-https://miro.com/app/board/uXjVJukGkCc=/?inviteKey=QVYxMkdCV0NOa3FNU04zRW5EWUtaRkxCczl3OVJrS0NXcVBhaGlCQTFOMStmNENzUWppTGQrZHJCeFIzWlhFczV1T2Ftai9CTW0ydXhjV045SjdyNndMMlgzZUVYbkFob1g4YXM2SzRzalpML0UvdnErSXdJUE54UjI1a3BvUHVBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE%3D
 
 
 
-#Figma  f
-https://www.figma.com/design/hyIlL4UFAvAikounfqPmkC/Beatitude?node-id=2001-2&t=7XsfmGkFXO9gcjXh-1
