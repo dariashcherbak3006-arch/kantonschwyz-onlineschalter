@@ -746,5 +746,11 @@
  "AGOV erfüllt die Sicherheitsstandards des Bundes und nutzt eine zusätzliche Bestätigung, etwa über die AGOV-access-App oder einen Sicherheitsschlüssel.": "AGOV répond aux normes de sécurité de la Confédération et utilise une confirmation supplémentaire, par exemple via l'application AGOV access ou une clé de sécurité.",
  "Gemeinde": "Commune",
  "Auswahl der Gemeinde": "Choix de la commune",
- "Bitte wählen Sie die Gemeinde aus, die Ihre Anfrage bearbeiten wird.": "Veuillez choisir la commune qui traitera votre demande."
+ "Bitte wählen Sie die Gemeinde aus, die Ihre Anfrage bearbeiten wird.": "Veuillez choisir la commune qui traitera votre demande.",
+ "Diese Seite ist eine Testumgebung.": "Ce site est un environnement de test.",
+ "Testumgebung": "Environnement de test",
+ "Dieser Onlineschalter ist ein Prototyp. Er dient ausschliesslich dazu, die Dienstleistungen des Kantons Schwyz zu testen.": "Ce guichet en ligne est un prototype. Il sert uniquement à tester les prestations du canton de Schwyz.",
+ "Nutzen Sie den KI-Assistenten nur, um den Onlineschalter des Kantons Schwyz zu testen. Jede andere Nutzung ist nicht gestattet.": "Utilisez l'assistant IA uniquement pour tester le guichet en ligne du canton de Schwyz. Toute autre utilisation est interdite.",
+ "Ihre Daten": "Vos données",
+ "Geben Sie keine echten Personendaten oder vertraulichen Informationen ein.": "Ne saisissez aucune donnée personnelle réelle ni information confidentielle."
 }

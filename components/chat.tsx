@@ -97,7 +97,7 @@ export function AiNotice() {
   const { t } = useT()
   return (
     <p className="ai-notice">
-      {t('KI-Antworten können fehlerhaft sein. Verbindlich sind die Angaben der zuständigen Stelle.')}
+      {t('KI-Antworten können fehlerhaft sein.')} <a href="/nutzungsbedingungen">{t('Nutzungsbedingungen')}</a>
     </p>
   )
 }

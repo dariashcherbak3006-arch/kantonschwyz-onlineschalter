@@ -722,5 +722,11 @@
  "AGOV erfüllt die Sicherheitsstandards des Bundes und nutzt eine zusätzliche Bestätigung, etwa über die AGOV-access-App oder einen Sicherheitsschlüssel.": "AGOV soddisfa gli standard di sicurezza della Confederazione e utilizza una conferma supplementare, per esempio tramite l'app AGOV access o una chiave di sicurezza.",
  "Gemeinde": "Comune",
  "Auswahl der Gemeinde": "Scelta del comune",
- "Bitte wählen Sie die Gemeinde aus, die Ihre Anfrage bearbeiten wird.": "Selezioni il comune che tratterà la Sua richiesta."
+ "Bitte wählen Sie die Gemeinde aus, die Ihre Anfrage bearbeiten wird.": "Selezioni il comune che tratterà la Sua richiesta.",
+ "Diese Seite ist eine Testumgebung.": "Questo sito è un ambiente di test.",
+ "Testumgebung": "Ambiente di test",
+ "Dieser Onlineschalter ist ein Prototyp. Er dient ausschliesslich dazu, die Dienstleistungen des Kantons Schwyz zu testen.": "Questo sportello online è un prototipo. Serve esclusivamente a testare i servizi del Canton Svitto.",
+ "Nutzen Sie den KI-Assistenten nur, um den Onlineschalter des Kantons Schwyz zu testen. Jede andere Nutzung ist nicht gestattet.": "Utilizzi l'assistente IA solo per testare lo sportello online del Canton Svitto. Ogni altro uso non è consentito.",
+ "Ihre Daten": "I Suoi dati",
+ "Geben Sie keine echten Personendaten oder vertraulichen Informationen ein.": "Non inserisca dati personali reali né informazioni confidenziali."
 }
