@@ -154,7 +154,7 @@ export default function Hero() {
       </div>
 
       {mode === 'search' && (
-        <nav className="chips" aria-label={t('Lebenslagen')}>
+        <nav className="chips" aria-label={t('Lebenssituationen')}>
           {LEBENSLAGEN.map((l) => (
             <button
               key={l.slug}
@@ -287,7 +287,7 @@ export default function Hero() {
           })}
 
           <section className="life" aria-labelledby="life-title">
-            <h2 id="life-title">{t('Lebenslagen')}</h2>
+            <h2 id="life-title" className="results__title">{t('Lebenssituationen')}</h2>
             <p className="life__lead">{t('Was ist zu tun? Schritt für Schritt durch typische Situationen.')}</p>
             {LEBENSLAGEN.map((l) => (
               <details key={l.slug} id={`life-${l.slug}`} className="life__item glass">
