@@ -176,58 +176,8 @@ main:focus {
   width: auto;
 }
 
-.site-nav {
-  margin-left: auto;
-}
-
-.site-nav__list {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.site-nav__trigger {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 0.5rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.site-nav__trigger:hover,
-.site-nav__trigger[aria-current='page'] {
-  background: var(--red-tint);
-  color: var(--red);
-}
-
-.site-nav__trigger[aria-expanded='true'] {
-  background: var(--red);
-  color: #fff;
-}
-
-.site-nav__trigger > .icon:first-child,
 .results__topic h2 .icon {
   color: var(--red);
-}
-
-.site-nav__trigger[aria-expanded='true'] > .icon {
-  color: inherit;
-}
-
-/* Desktop: red pill shows the open state; chevron only in the mobile menu */
-.site-nav__chevron {
-  display: none;
-  width: 1rem;
-  height: 1rem;
-  transition: transform 0.2s;
-}
-
-[aria-expanded='true'] > .site-nav__chevron {
-  transform: rotate(180deg);
 }
 
 /* Panel spans the whole header: positioned against the fixed .site-header */
@@ -255,16 +205,6 @@ main:focus {
   }
 }
 
-.mega__heading {
-  margin: 0 0 0.5rem;
-  padding-left: 0.6rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--red);
-}
-
 .mega__link {
   display: block;
   padding: 0.45rem 0.6rem;
@@ -278,16 +218,9 @@ main:focus {
   color: var(--red);
 }
 
-/* Narrow: the topic menu doesn't fit next to the logo; topics stay reachable via the home tiles */
-@media (max-width: 1300px) {
-  .site-nav {
-    display: none;
-  }
-
-  /* Logo left, all controls right */
-  .site-header__logo {
-    margin-right: auto;
-  }
+/* Logo left, all controls right */
+.site-header__logo {
+  margin-right: auto;
 }
 
 /* ——— Header search ——— */
@@ -1849,6 +1782,23 @@ main {
   transition: background 0.2s, opacity 0.2s;
 }
 
+.searchbar__clear {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.searchbar__clear:hover {
+  background: var(--red-tint);
+  color: var(--red);
+}
+
 .searchbar__send:hover {
   background: var(--red-dark);
 }
@@ -2054,12 +2004,12 @@ main {
   border-color: rgba(246, 0, 0, 0.45);
 }
 
+/* Group on line 1, badge always on line 2: same layout whatever the group name length */
 .service__meta {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.35rem 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
 /* Kommunal = outlined, kantonal = filled: tells them apart without relying on colour alone */

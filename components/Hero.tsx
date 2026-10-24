@@ -112,6 +112,16 @@ export default function Hero() {
           onChange={(e) => (setQuery(e.target.value), setLife(null))}
           placeholder={t(mode === 'ai' ? 'Stellen Sie Ihre Frage …' : 'z. B. Umzug, Steuern, Hund …')}
         />
+        {(query || (mode === 'search' && life)) && (
+          <button
+            type="button"
+            className="searchbar__clear"
+            aria-label={t('Eingabe löschen')}
+            onClick={() => (setQuery(''), setLife(null), document.getElementById('q')?.focus())}
+          >
+            ×
+          </button>
+        )}
         {mode === 'ai' && (
           <button type="submit" className="searchbar__send" disabled={!query.trim() || loading} aria-label={t('Senden')}>
             <SendIcon />
