@@ -1,0 +1,186 @@
+{
+ "title": "Sportbus beantragen",
+ "steps": [
+  {
+   "title": "Verwendungszweck",
+   "note": "Beantragen Sie hier den Sportbus des Kantons Schwyz für Ihre Sport- oder Jugendorganisation. <br>Ihre Anfrage wird nach Eingang geprüft. Sie erhalten anschliessend eine Rückmeldung zur Verfügbarkeit.",
+   "fields": [
+    {
+     "name": "page1.organisation",
+     "label": "Name der Sport- / Jugendorganisation",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page1.anlass_art",
+     "label": "Art des Anlasses",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page1.mietdauer_von",
+     "label": "Mietbeginn (Abholdatum)",
+     "required": true,
+     "type": "date",
+     "min": "today"
+    },
+    {
+     "name": "page1.mietdauer_bis",
+     "label": "Mietende (Rückgabedatum)",
+     "required": true,
+     "hint": "Die maximale Mietdauer beträgt 7 Tage.",
+     "type": "date",
+     "min": "today"
+    },
+    {
+     "name": "page1.anzahl_tage",
+     "label": "Anzahl Tage (wird automatisch berechnet)",
+     "type": "text",
+     "readonly": true,
+     "compute": {
+      "dateDiff": [
+       "page1.mietdauer_von",
+       "page1.mietdauer_bis"
+      ],
+      "plus": 1
+     }
+    },
+    {
+     "name": "page1.fahrstrecke_von",
+     "label": "Fahrstrecke von",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page1.fahrstrecke_nach",
+     "label": "Fahrstrecke nach",
+     "required": true,
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "title": "Mieterin / Mieter",
+   "fields": [
+    {
+     "name": "page2.mieter_name",
+     "label": "Name",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page2.mieter_vorname",
+     "label": "Vorname",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page2.mieter_strasse",
+     "label": "Strasse / Nr.",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page2.mieter_plz",
+     "label": "Postleitzahl",
+     "required": true,
+     "type": "text",
+     "span": 4
+    },
+    {
+     "name": "page2.mieter_ort",
+     "label": "Ort",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page2.mieter_mobile",
+     "label": "Telefon",
+     "required": true,
+     "placeholder": "+41 …",
+     "type": "tel",
+     "inputMode": "tel",
+     "pattern": "^\\+?[0-9 ]{6,18}$",
+     "patternMessage": "Bitte geben Sie eine gültige Telefonnummer ein."
+    },
+    {
+     "name": "page2.mieter_email",
+     "label": "E-Mail",
+     "required": true,
+     "type": "email",
+     "inputMode": "email"
+    },
+    {
+     "name": "page2.lenker_gleich_mieter",
+     "label": "Die Lenkerin / der Lenker ist identisch mit der Mieterin / dem Mieter",
+     "required": true,
+     "type": "select",
+     "options": [
+      "Ja",
+      "Nein"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lenkerin / Lenker",
+   "fields": [
+    {
+     "name": "page3.lenker_name",
+     "label": "Name",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.lenker_vorname",
+     "label": "Vorname",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.lenker_strasse",
+     "label": "Strasse / Nr.",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.lenker_plz_ort",
+     "label": "Postleitzahl / Ort",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.lenker_mobile",
+     "label": "Telefon",
+     "required": true,
+     "placeholder": "+41 …",
+     "type": "tel",
+     "inputMode": "tel",
+     "pattern": "^\\+?[0-9 ]{6,18}$",
+     "patternMessage": "Bitte geben Sie eine gültige Telefonnummer ein."
+    }
+   ],
+   "rules": [
+    {
+     "attr": "hide",
+     "value": true,
+     "op": "!=",
+     "field": "page2.lenker_gleich_mieter",
+     "eq": "nein"
+    }
+   ]
+  },
+  {
+   "title": "Nutzungsbedingungen",
+   "note": "Bitte bei der Rückgabe des Sportbusses dringend beachten:<ul><li>Der Sportbus muss nach Gebrauch wieder bei der Retablierungsstelle (Schlagstrasse 89, Schwyz) parkiert werden.</li><li>Alle Fenster müssen geschlossen werden.</li><li>Das Fahrzeug muss innen sauber gereinigt zurückgegeben werden (Reinigungsmaterial selbst mitbringen).</li><li>Der Treibstofftank muss mit DIESEL aufgefüllt sein.</li><li>Der Sportbus ist für Privatzwecke nicht erlaubt.</li><li>Der Sportbus ist ein Nichtraucher-Fahrzeug.</li><li><a href=\"https://hub.onlineschalter.sz.ch/gateway/api/tenants/TenantEgsz/medialib/c7b656ad-49f3-44a5-8d3f-e1e4786b456e/download\" target=\"_blank\" rel=\"noopener noreferrer\">Reglement Schwyzer Sportbus</a></li></ul>",
+   "fields": [
+    {
+     "name": "page4.agb_akzeptiert",
+     "label": "Ich habe die obenstehenden Bestimmungen (inkl. Reglement) gelesen und akzeptiere sie.",
+     "required": true,
+     "type": "checkbox"
+    }
+   ]
+  }
+ ]
+}

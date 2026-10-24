@@ -1,0 +1,44 @@
+{
+ "title": null,
+ "steps": [
+  {
+   "title": "Angaben",
+   "note": "Fristerstreckungsgesuche können bis Ende März beziehungsweise vor Ablauf einer bereits bewilligten Fristerstreckung eingereicht werden. Verheiratete oder in eingetragener Partnerschaft lebende Personen geben das Geburtsdatum von Partnerin bzw. Partner 1 an (auf Steuererklärung mit P1 bezeichnet).",
+   "fields": [
+    {
+     "name": "periode",
+     "label": "Periode",
+     "type": "text",
+     "readonly": true,
+     "compute": {
+      "year": -1
+     }
+    },
+    {
+     "name": "masked",
+     "label": "PID-Nummer",
+     "required": true,
+     "hint": "Die PID-Nummer finden Sie oben rechts auf Ihrer Steuererklärung. Es handelt sich um eine Zahl zwischen 1 und 999999.",
+     "type": "text",
+     "pattern": "^(?:\\d{1,6})$",
+     "inputMode": "numeric",
+     "patternMessage": "Bitte nur Ziffern eingeben."
+    },
+    {
+     "name": "geburtsdatum",
+     "label": "Geburtsdatum",
+     "required": true,
+     "type": "date",
+     "max": "today"
+    },
+    {
+     "name": "gewuenschteFrist",
+     "label": "Neue Frist",
+     "required": true,
+     "type": "date",
+     "min": "today"
+    }
+   ]
+  }
+ ]
+}

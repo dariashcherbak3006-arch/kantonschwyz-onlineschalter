@@ -1,0 +1,188 @@
+{
+ "title": "Lotteriefonds Gesuch",
+ "steps": [
+  {
+   "title": "Antragstellende Person",
+   "fields": [
+    {
+     "name": "page1.anrede",
+     "label": "Anrede",
+     "required": true,
+     "type": "select",
+     "options": [
+      "Herr",
+      "Frau"
+     ]
+    },
+    {
+     "name": "page1.name",
+     "label": "Name",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page1.vorname",
+     "label": "Vorname",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page1.adresse_strasse",
+     "label": "Strasse",
+     "type": "text",
+     "required": true,
+     "span": 9
+    },
+    {
+     "name": "page1.adresse_nr",
+     "label": "Nr.",
+     "type": "text",
+     "required": true,
+     "span": 3
+    },
+    {
+     "name": "page1.adresse_plz",
+     "label": "PLZ",
+     "type": "text",
+     "required": true,
+     "span": 4,
+     "pattern": "^[0-9]{4,5}$",
+     "patternMessage": "Bitte geben Sie eine gültige Postleitzahl ein.",
+     "inputMode": "numeric"
+    },
+    {
+     "name": "page1.adresse_ort",
+     "label": "Ort",
+     "type": "text",
+     "required": true,
+     "span": 8
+    },
+    {
+     "name": "page1.email",
+     "label": "E-Mail",
+     "required": true,
+     "type": "email",
+     "inputMode": "email"
+    },
+    {
+     "name": "page1.telefon",
+     "label": "Telefon",
+     "required": true,
+     "placeholder": "+41 …",
+     "type": "tel",
+     "inputMode": "tel",
+     "pattern": "^\\+?[0-9 ]{6,18}$",
+     "patternMessage": "Bitte geben Sie eine gültige Telefonnummer ein."
+    }
+   ]
+  },
+  {
+   "title": "Angaben zum Träger",
+   "fields": [
+    {
+     "name": "page2.traeger_art",
+     "label": "Träger",
+     "required": true,
+     "type": "select",
+     "options": [
+      "Verein",
+      "Stiftung",
+      "Einzelperson",
+      "AG",
+      "GmbH",
+      "Andere"
+     ]
+    },
+    {
+     "name": "page2.traeger_name",
+     "label": "Name des Trägers",
+     "required": true,
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "title": "Angaben zur Auszahlung",
+   "fields": [
+    {
+     "name": "page3.iban",
+     "label": "IBAN-Nr.",
+     "required": true,
+     "hint": "Bankkonto für die Auszahlung",
+     "placeholder": "CH00 0000 0000 0000 0000 0",
+     "type": "text",
+     "pattern": "^[A-Za-z]{2}[0-9]{2}[A-Za-z0-9 ]{11,32}$",
+     "patternMessage": "Bitte geben Sie eine gültige IBAN ein."
+    },
+    {
+     "name": "page3.kontoinhaber",
+     "label": "Name des Kontoinhabers",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.strasse_konto",
+     "label": "Strasse / Nr.",
+     "required": true,
+     "type": "text"
+    },
+    {
+     "name": "page3.plz_konto",
+     "label": "Postleitzahl",
+     "required": true,
+     "type": "text",
+     "pattern": "^[0-9]{4}$",
+     "inputMode": "numeric",
+     "patternMessage": "Bitte 4 Ziffern eingeben.",
+     "span": 4
+    },
+    {
+     "name": "page3.ort_konto",
+     "label": "Ort",
+     "required": true,
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "title": "Angaben zum Vorhaben",
+   "fields": [
+    {
+     "name": "page4.bezeichnung",
+     "label": "Bezeichnung des Vorhabens",
+     "required": true,
+     "hint": "Beispiel: 125 Jahr Jubiläumsanlass",
+     "type": "text"
+    },
+    {
+     "name": "page4.beginn",
+     "label": "Beginn",
+     "required": true,
+     "type": "date",
+     "min": "today"
+    },
+    {
+     "name": "page4.ende",
+     "label": "Ende",
+     "required": true,
+     "type": "date",
+     "min": "today"
+    },
+    {
+     "name": "page4.beantragter_beitrag",
+     "label": "Beantragter Beitrag in CHF",
+     "required": true,
+     "type": "number"
+    },
+    {
+     "name": "page4.dokumente",
+     "label": "Dokumente (Beschreibung des Vorhabens und Finanzierungsplan)",
+     "required": true,
+     "type": "file",
+     "multiple": true,
+     "accept": ".pdf,.jpg,.png"
+    }
+   ]
+  }
+ ]
+}

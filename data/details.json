@@ -1,0 +1,2425 @@
+{
+ "14": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1117",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Das Amt für Finanzen kann für Steuerbeträge der direkten Bundessteuer Ratenzahlung bewilligen, wenn besondere Verhältnisse vorliegen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Das Amt für Finanzen kann Gesuche ablehnen oder weniger Raten bewilligen."
+      }
+     ],
+     [
+      {
+       "text": "Werden vereinbarte Ratenzahlungen nicht eingehalten, wird das rechtliche Inkasso ausgelöst."
+      }
+     ],
+     [
+      {
+       "text": "Es werden Verzugszinsen verrechnet."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Es ist kein Login notwendig."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Sie reichen das Gesuch für eine Ratenzahlung der direkten Bundessteuer online ein."
+      }
+     ],
+     [
+      {
+       "text": "Das Amt für Finanzen prüft das Gesuch."
+      }
+     ],
+     [
+      {
+       "text": "Sie erhalten eine Antwort per E-Mail. Die Einzahlungsscheine werden per E-Mail oder per Post zugestellt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "maximal 5 Tage"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Amt für Finanzen\nInkasso Direkte Bundessteuer\nBahnhofstrasse 15\nPostfach 1231\n6431 Schwyz"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bundesgesetz über die direkte Bundessteuer (DBG, SR 642.11)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de?version=20281231"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "15": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1005",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Das Amt für Finanzen kann für Steuerbeträge der direkten Bundessteuer Stundung (Verlängerung der Zahlungsfrist, max. 3 Monate) bewilligen, wenn besondere Verhältnisse vorliegen"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Das Amt für Finanzen kann Gesuche ablehnen."
+      }
+     ],
+     [
+      {
+       "text": "Wird die vereinbarte Fristverlängerung nicht eingehalten, wird das rechtliche Inkasso ausgelöst."
+      }
+     ],
+     [
+      {
+       "text": "Es werden Verzugszinsen verrechnet."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Es ist kein Login notwendig."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Sie reichen das Gesuch für eine Stundung (Verlängerung der Zahlungsfrist) der direkten Bundessteuer online ein."
+      }
+     ],
+     [
+      {
+       "text": "Das Amt für Finanzen prüft das Gesuch."
+      }
+     ],
+     [
+      {
+       "text": "Sie erhalten eine Bestätigung per E-Mail."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "maximal 5 Tage"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Amt für Finanzen\nInkasso Direkte Bundessteuer\nBahnhofstrasse 15\nPostfach 1231\n6431 Schwyz"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bundesgesetz über die direkte Bundessteuer (DBG, SR 642.11)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de?version=20281231"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "17": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1001",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Steuererklärung von Privatpersonen kann online eine Fristerstreckung beantragt werden."
+      }
+     ],
+     [
+      {
+       "text": "Die Fristerstreckung ermöglicht eine Verlängerung der Einreichungsfrist für die Steuererklärung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Verheiratete oder in eingetragener Partnerschaft lebende Personen geben das Geburtsdatum von Partnerin bzw. Partner 1 an (auf Steuererklärung mit P1 bezeichnet)."
+      }
+     ],
+     [
+      {
+       "text": "Die Fristerstreckung muss rechtzeitig beantragt werden."
+      }
+     ],
+     [
+      {
+       "text": "Eine online gewährte Fristerstreckung kann aus wichtigen Gründen widerrufen oder gekürzt werden."
+      }
+     ],
+     [
+      {
+       "text": "Bei Fragen oder in Sonderfällen wenden Sie sich für Fristerstreckungen direkt an Ihr Gemeinde- oder Bezirkskassieramt."
+      }
+     ],
+     [
+      {
+       "text": "Wird die Online-Fristerstreckung abgelehnt, ist die Steuererklärung sofort, spätestens innert der noch laufenden Frist einzureichen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Es liegt eine Steuererklärung für Privatpersonen vor."
+      }
+     ],
+     [
+      {
+       "text": "Die PID-Nummer und das Geburtsdatum sind bekannt. Die PID-Nummer finden Sie oben rechts auf Ihrer Steuererklärung."
+      }
+     ],
+     [
+      {
+       "text": "Die ordentliche oder erstreckte Einreichungsfrist ist noch nicht abgelaufen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Es ist kein Login notwendig."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Sie erfassen die Steuerperiode, die PID-Nummer und das Geburtsdatum."
+      }
+     ],
+     [
+      {
+       "text": "Sie wählen die gewünschte Fristverlängerung aus."
+      }
+     ],
+     [
+      {
+       "text": "Sie übermitteln das Gesuch online."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesuche können bis Ende März bzw. vor Ablauf einer amtlich anders angesetzten Frist (z.B. bereits bewilligte Fristerstreckung) eingereicht werden."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Auf Steuererklärung aufgeführte Gemeinde/Bezirk."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "§§ 44 ff. der Vollzugsverordnung zum Steuergesetz (VVStG, SRSZ 172.211)",
+       "href": "https://www.sz.ch/public/upload/assets/46606/172_211.pdf"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "18": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1014",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Der Schwyzer Sportbus kann von Vereinen, Schulen und Organisationen im Kanton Schwyz für Fahrten in der Schweiz zu sportlichen Anlässen, Trainings oder Wettkämpfen genutzt werden."
+      }
+     ],
+     [
+      {
+       "text": "Der Sportbus bietet Platz für 9 Personen inklusive Fahrer."
+      }
+     ],
+     [
+      {
+       "text": "Foto Sportbus",
+       "href": "https://hub.onlineschalter.sz.ch/gateway/api/tenants/TenantEgsz/medialib/7f42ddd3-cc04-4810-af0a-3461611168db/download"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesuch vor der geplanten Fahrt einreichen."
+      }
+     ],
+     [
+      {
+       "text": "Maximale Mietdauer: 7 Tage."
+      }
+     ],
+     [
+      {
+       "text": "Kein Anspruch auf Bewilligung der Nutzung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesuchstellende Organisation hat Sitz oder Tätigkeit im Kanton Schwyz."
+      }
+     ],
+     [
+      {
+       "text": "Nutzung erfolgt für sportliche oder jugendfördernde Zwecke."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Angaben zur Fahrt (Datum, Ziel, Zweck)."
+      }
+     ],
+     [
+      {
+       "text": "Angaben zur Gruppe oder Organisation."
+      }
+     ],
+     [
+      {
+       "text": "Kontaktperson für die Nutzung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kein Login erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Gesuch einreichen."
+      }
+     ],
+     [
+      {
+       "text": "Prüfung der Verfügbarkeit und Voraussetzungen."
+      }
+     ],
+     [
+      {
+       "text": "Entscheid über die Benützung und Bestätigung der Reservation."
+      }
+     ],
+     [
+      {
+       "text": "Nutzung des Sportbusses zum vereinbarten Zeitpunkt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "In der Regel wenige Arbeitstage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "1 Tag: CHF 75.–"
+      }
+     ],
+     [
+      {
+       "text": "2 bis 7 Tage: Pauschalbetrag CHF 150.–"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bildungsdepartement\nAmt für Volksschulen und Sport\nAbteilung Sport\nKollegiumstrasse 28\nPostfach 2194\n6431 Schwyz\nTel. +41 41 819 19 40\nE-Mail: sport.avs@sz.ch"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Reglement Schwyzer Sportbus",
+       "href": "https://hub.onlineschalter.sz.ch/gateway/api/tenants/TenantEgsz/medialib/f865d5e0-2b64-41fc-ba30-0af516ddcfa2/download"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "20": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1116",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bezahlte Ersatzabgaben werden Militär- und Zivildienstleistenden rückerstattet, sofern die Dienstleistungspflicht erfüllt ist."
+      }
+     ],
+     [
+      {
+       "text": "Höhere Unteroffiziere und Offiziere des Zivilschutzes erhalten aus der Schutzdienstpflicht eine anteilsmässige Rückerstattung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Die Rückerstattung muss im Kanton beantragt werden, in welchem die Wehrpflichterstatzabgabe bezahlt wurde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Der Anspruch besteht, wenn die Dienstleistungspflicht erfüllt ist."
+      }
+     ],
+     [
+      {
+       "text": "Sie haben im Kanton Schwyz Wehrpflichtersatzabgabe bezahlt. Falls auch in weiteren Kantonen, leiten wir das Gesuch weiter."
+      }
+     ],
+     [
+      {
+       "text": "Falls Sie nicht im Kanton Schwyz bezahlt haben, bitte das Gesuch beim "
+      },
+      {
+       "text": "zuständigen Kanton",
+       "href": "https://www.estv.admin.ch/de/kontakte-kantone-zur-wehrpflichtersatzabgabe"
+      },
+      {
+       "text": " einreichen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Login erforderlich"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Das Rückerstattungsgesuch wird geprüft."
+      }
+     ],
+     [
+      {
+       "text": "Bei bestehendem Anspruch wird das Guthaben auf das angegebene Bank- oder Postkonto überwiesen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Der Anspruch auf Rückerstattung und die Pflicht zur Rückerstattung verjähren am Ende des fünften Jahres nach der Entlassung aus der Militär- oder Zivildienstpflicht bzw. der Schutzdienstpflicht."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Amt für Militär, Feuer- und Zivilschutz\nWehrpflichtersatzabgabe\nSchlagstrasse 89\nPostfach 4215\n6431 Schwyz"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bundesgesetz über die Wehrpflichtersatzabgabe (WPEG, SR 661)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1959/2035_2097_2125/de"
+      }
+     ],
+     [
+      {
+       "text": "Verordnung über die Wehrpflichtersatzabgabe (WPEV, SR 661.1)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1995/4324_4324_4324/de"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "21": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1114",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Wehrpflichtersatzabgabe (WPE) kann Ratenzahlung beantragt werden"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ratenzahlungen führen immer zu Verzugszinsen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie haben eine offene WPE-Rechnung vom Kanton Schwyz und möchten diese in Raten begleichen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "WPE-Rechnung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Dienstleistung ist eine Anmeldung erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Sie reichen das Gesuch für eine Ratenzahlung der WPE online ein."
+      }
+     ],
+     [
+      {
+       "text": "Das Gesuch wird geprüft."
+      }
+     ],
+     [
+      {
+       "text": "Anschliessend erhalten Sie den schriftlichen Entscheid per Post."
+      }
+     ],
+     [
+      {
+       "text": "Bei Bewilligung erhalten Sie die Einzahlungsscheine gemäss Entscheid per Post."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ratenzahlungen können Sie grundsätzlich jederzeit beantragen. Bitte beachten Sie jedoch, dass wir nach Einleitung der Betreibung keine Ratenzahlung mehr bewilligen können."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "maximal 5 Arbeitstage"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Es werden Verzugszinsen fällig."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Amt für Militär, Feuer- und Zivilschutz\nWehrpflichtersatzabgabe\nSchlagstrasse 89\nPostfach 4215\n6431 Schwyz"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bundesgesetz über die Wehrpflichtersatzabgabe (WPEG, SR 661)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1959/2035_2097_2125/de"
+      }
+     ],
+     [
+      {
+       "text": "Verordnung des EFD über Fälligkeit und Verzinsung der direkten Bundessteuer (SR 642.124)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1993/717_717_717/de"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "22": {
+  "formUrl": "https://www.armee.ch/de/dim",
+  "sections": []
+ },
+ "23": {
+  "formUrl": "https://www.e-service.admin.ch/crex/cms/content/strafregister/strafregister_de",
+  "sections": []
+ },
+ "24": {
+  "formUrl": "https://www.eumzug.swiss/eumzugngx/global",
+  "sections": []
+ },
+ "25": {
+  "formUrl": "https://www.suisse-epolice.ch/search-station",
+  "sections": []
+ },
+ "27": {
+  "formUrl": "https://www.suisse-epolice.ch/theft-case",
+  "sections": []
+ },
+ "28": {
+  "formUrl": "https://www.suisse-epolice.ch/damage-case",
+  "sections": []
+ },
+ "29": {
+  "formUrl": "https://www.suisse-epolice.ch/plate-case",
+  "sections": []
+ },
+ "30": {
+  "formUrl": "https://www.suisse-epolice.ch/cybercrime-case",
+  "sections": []
+ },
+ "31": {
+  "formUrl": "https://www.suisse-epolice.ch/weapon-case",
+  "sections": []
+ },
+ "32": {
+  "formUrl": "https://cariegov.sz.ch/ecari-dispoweb/ui/app/init/#/circ/prive/login",
+  "sections": []
+ },
+ "33": {
+  "formUrl": "https://cariegov.sz.ch/ecari-dispoweb/ui/app/init/#/conduite/prive/login",
+  "sections": []
+ },
+ "34": {
+  "formUrl": "https://cariegov.sz.ch/ecari-auction/ui/app/init?locale=de_ch",
+  "sections": []
+ },
+ "35": {
+  "formUrl": "https://onlineschalter.sz.ch/Pages/Services/Detail.aspx?id=35",
+  "sections": []
+ },
+ "36": {
+  "formUrl": "https://www.kb-sz.ch/NetBiblio/",
+  "sections": []
+ },
+ "37": {
+  "formUrl": "https://www.eautoindex.ch/",
+  "sections": []
+ },
+ "38": {
+  "formUrl": "https://www.ch-edoc-passantrag.admin.ch/#/antraggesuch?request_locale=de",
+  "sections": []
+ },
+ "39": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5001",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Benötigen Sie Auskunft über die aktuelle Adresse einer in einer Schwyzer Gemeinde gemeldeten Person oder einer Person, die zu einem früheren Zeitpunkt in einer Schwyzer Gemeinde gewohnt hat?"
+      }
+     ],
+     [
+      {
+       "text": "Gerne erteilen wir Ihnen eine Adressauskunft mit den zulässigen Daten."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sofern keine Datensperre (§ 13) hinterlegt ist, werden auf schriftliche Anfrage folgende Daten bekannt gegeben (§ 12 ÖDSG):"
+      }
+     ],
+     [
+      {
+       "text": "Name, Vorname, Adresse und Geburtsdatum einer Person;"
+      }
+     ],
+     [
+      {
+       "text": "Daten, welche die betroffene Person allgemein zugänglich gemacht hat."
+      }
+     ],
+     [
+      {
+       "text": "Das Einwohneramt kann auf Gesuch hin neben den zuvor erwähnten Daten auch den Heimatort bzw. die Staatsangehörigkeit, Datum und Ort des Zuzugs und des Wegzugs einer einzelnen Person oder einer Mehrzahl von Personen bekannt geben, wenn dafür ein berechtigtes Interesse glaubhaft gemacht wird."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Die betroffene Person wohnt aktuell in einer Schwyzer Gemeinde oder war zu einem früheren Zeitpunkt in einer Schwyzer Gemeinde wohnhaft."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Interessensnachweis (z. B. Vertrag, Rechnungen, vollstreckbares Urteil usw.)."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss der Bestellung und der Bezahlung stellt Ihnen das Einwohneramt die Adressauskunft über die von Ihnen ausgewählte Lieferart zu."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Arbeitstage, vorausgesetzt es ist kein Adresswechsel der gesuchten Person pendent."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "CHF 10.00 pro Person zzgl. allfälliger Versandkosten."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesetz über die Öffentlichkeit der Verwaltung und den Datenschutz (ÖDSG)",
+       "href": "https://www.sz.ch/public/upload/assets/7255/140_410.pdf"
+      },
+      {
+       "text": " vom 23. Mai 2007 (SRSZ 140.410)."
+      }
+     ],
+     [
+      {
+       "text": "Verordnung zum Öffentlichkeits- und Datenschutzgesetz (ÖDSV)",
+       "href": "https://www.sz.ch/public/upload/assets/5406/140_411.pdf"
+      },
+      {
+       "text": " vom 28. Oktober 2008 (SRSZ 140.411)."
+      }
+     ],
+     [
+      {
+       "text": "Gesetz über das Einwohnermeldewesen (EMG)",
+       "href": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf"
+      },
+      {
+       "text": ", § 21 (SRSZ 111.110)."
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "40": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5002",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bei einer erstmaligen Hundehaltung müssen Sie sich als Hundehalter/-in bei Ihrer Gemeinde anmelden."
+      }
+     ],
+     [
+      {
+       "text": "Die Gemeinde registriert Sie in der zentralen, nationalen Hundedatenbank AMICUS und erstellt automatisch eine Personen-ID."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Dieser Service ist nur für Personen, welche noch keine Personen-ID in der nationalen Hundedatenbank AMICUS besitzen."
+      }
+     ],
+     [
+      {
+       "text": "Personen unter 16 Jahren können nicht erfasst werden; in diesem Fall ist die gesetzliche Vertretung erforderlich."
+      }
+     ],
+     [
+      {
+       "text": "Nach der Erfassung können Sie als Hundehalter/-in folgende Aktionen selbst in AMICUS vornehmen oder durch Ihre Tierärztin bzw. Ihren Tierarzt vornehmen lassen:"
+      }
+     ],
+     [
+      {
+       "text": "Übergabe eines Hundes an eine neue Halterin bzw. einen neuen Halter."
+      }
+     ],
+     [
+      {
+       "text": "Meldung des Todes eines Hundes."
+      }
+     ],
+     [
+      {
+       "text": "Abgabe eines Hundes ins Ausland."
+      }
+     ],
+     [
+      {
+       "text": "Die Erfassung eines neuen Hundes (Welpen) oder die Übernahme eines Hundes aus dem Ausland muss zwingend durch Ihre Tierärztin bzw. Ihren Tierarzt anhand der Mikrochip-Nummer erfolgen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie wohnen aktuell in einer Schwyzer Gemeinde und möchten erstmalig einen Hund halten."
+      }
+     ],
+     [
+      {
+       "text": "Falls Sie nicht mehr sicher sind, ob Sie bereits bei AMICUS registriert sind, prüfen Sie dies auf der "
+      },
+      {
+       "text": "Homepage der nationalen Hundedatenbank",
+       "href": "https://www.amicus.ch/Account/Login"
+      },
+      {
+       "text": " über die Self-Service-Funktion «Benutzerdaten vergessen». Achten Sie auf eine korrekte und einheitliche Schreibweise Ihrer Angaben. Im Zweifelsfall melden Sie sich bei Ihrer Gemeinde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kopie des Hundepasses oder des Impfausweises mit aktueller Mikrochip-Nummer (optional)."
+      }
+     ],
+     [
+      {
+       "text": "Für von der Hundesteuer befreite Hunde (§ 7 des Gesetzes über das Halten von Hunden) oder für Hunde mit Anrecht auf eine reduzierte Hundesteuer (§ 4 des Gesetzes über das Halten von Hunden) ist der entsprechende Nachweis einzureichen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss des Prozesses erhalten Sie eine Bestätigung. Die Zugangsdaten für AMICUS werden Ihnen per E-Mail zugestellt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Jegliche Aktionen im Zusammenhang mit Ihrem Hund müssen spätestens innert 10 Tagen nach dem Ereignis erfolgen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Tage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Registrierung als Ersthundehalter/-in in AMICUS entstehen keine Kosten."
+      }
+     ],
+     [
+      {
+       "text": "Die Höhe der Hundesteuer ist von Gemeinde zu Gemeinde unterschiedlich. Bitte informieren Sie sich direkt auf der Homepage Ihrer Wohngemeinde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt oder Steueramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kantonales Gesetz über das Halten von Hunden (HuG)",
+       "href": "https://www.sz.ch/public/upload/assets/3802/546_100.pdf"
+      },
+      {
+       "text": ", SRSZ 546.100."
+      }
+     ],
+     [
+      {
+       "text": "Tierseuchenverordnung (TSV)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1995/3716_3716_3716/de#art_16"
+      },
+      {
+       "text": ", SR 916.401 (ab Art. 16 ff.)."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Weiterführende Informationen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ich werde Hundehalter – Was muss ich wissen",
+       "href": "https://www.amicus.ch/Content/News/Flyer_DE.pdf"
+      }
+     ],
+     [
+      {
+       "text": "Benutzerhandbuch für Hundehaltende",
+       "href": "https://www.amicus.ch/content/news/handbuch_hundehalter_de.pdf"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "41": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5003",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Benötigen Sie für eine amtliche Angelegenheit (z. B. Einbürgerung, Verlängerung der Aufenthaltsbewilligung, Familiennachzug) oder für die Wohnungssuche einen Nachweis darüber, ob Sie Sozialhilfe beziehen oder bezogen haben? Gerne stellen wir Ihnen diese Bestätigung aus."
+      }
+     ],
+     [
+      {
+       "text": "Die Bestätigung gibt Auskunft darüber, ob und in welchem Zeitraum Sie wirtschaftliche Sozialhilfe in der verlangten Gemeinde bezogen haben."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie wohnen aktuell in einer Schwyzer Gemeinde oder haben früher in einer Schwyzer Gemeinde gewohnt."
+      }
+     ],
+     [
+      {
+       "text": "Falls Sie Bestätigungen von mehreren Gemeinden benötigen, füllen Sie bitte je ein Formular pro zuständige Gemeinde aus."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Bestellvorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss der Bestellung stellt Ihnen die zuständige Gemeinde die Bestätigung über die von Ihnen ausgewählte Lieferart zu."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Arbeitstage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "CHF 20.00 pro Bestätigung zzgl. allfälliger Versandkosten."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sozialdienst Ihrer Gemeinde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesetz über die Sozialhilfe (ShG)",
+       "href": "https://www.sz.ch/public/upload/assets/3688/380_100.pdf"
+      },
+      {
+       "text": ", SRSZ 380.100."
+      }
+     ],
+     [
+      {
+       "text": "Vollziehungsverordnung zum Gesetz über die Sozialhilfe (Sozialhilfeverordnung, ShV)",
+       "href": "https://www.sz.ch/public/upload/assets/32455/380_111.pdf"
+      },
+      {
+       "text": ", SRSZ 380.111."
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "43": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5005",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für einen Studien-, Wochen- oder Heimaufenthalt in einer anderen Gemeinde stellt Ihnen die Abteilung Einwohneramt einen Heimatausweis aus."
+      }
+     ],
+     [
+      {
+       "text": "In diesem Fall wird das Hauptdomizil in Ihrer Wohnsitzgemeinde nicht aufgelöst und der Hauptwohnsitz (Niederlassung) bleibt bestehen."
+      }
+     ],
+     [
+      {
+       "text": "Bei Aufenthalt in Altersheimen oder Pflegeinstitutionen wird der Heimatausweis unbefristet ausgestellt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie wohnen aktuell in einer Schwyzer Gemeinde und möchten sich in einer anderen Schweizer Gemeinde als Wochenaufenthalter (mit Nebenwohnsitz) anmelden."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss der Bestellung und der Bezahlung stellt Ihnen das Einwohneramt den Heimatausweis über die von Ihnen ausgewählte Lieferart zu."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Arbeitstage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "CHF 20.00 zzgl. allfälliger Versandkosten für einen Heimatausweis mit Gültigkeit für ein Jahr."
+      }
+     ],
+     [
+      {
+       "text": "CHF 30.00 zzgl. allfälliger Versandkosten für einen Heimatausweis mit Gültigkeit von max. zwei Jahren."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesetz über das Einwohnermeldewesen (EMG)",
+       "href": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf"
+      },
+      {
+       "text": ", § 15 und § 17, SRSZ 111.110."
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "44": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5006",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Wenn Ihr Hund verstirbt, Sie ihn an eine neue Halterin bzw. einen neuen Halter abgeben, ins Ausland exportieren oder mit dem Hund wegziehen, müssen Sie dies melden."
+      }
+     ],
+     [
+      {
+       "text": "So bleiben die Angaben in der Hundekontrolle Ihrer Gemeinde und in der nationalen Hundedatenbank AMICUS aktuell."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Folgende Aktionen können Sie als Hundehalter/-in selbst in AMICUS vornehmen oder durch Ihre Tierärztin bzw. Ihren Tierarzt vornehmen lassen:"
+      }
+     ],
+     [
+      {
+       "text": "Die Übergabe eines Hundes an eine neue Halterin bzw. einen neuen Halter."
+      }
+     ],
+     [
+      {
+       "text": "Die Meldung des Todes eines Hundes."
+      }
+     ],
+     [
+      {
+       "text": "Die Abgabe eines Hundes ins Ausland."
+      }
+     ],
+     [
+      {
+       "text": "Für die Übergabe an eine neue Halterin bzw. einen neuen Halter wird deren bzw. dessen Personen-ID benötigt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie sind als Hundehalter/-in registriert und verfügen über eine Personen-ID in AMICUS."
+      }
+     ],
+     [
+      {
+       "text": "Ihr Hund ist verstorben, wird an eine neue Halterin bzw. einen neuen Halter übergeben, ins Ausland abgegeben, oder Sie ziehen mit dem Hund weg."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Bei Übergabe an eine neue Halterin bzw. einen neuen Halter: deren bzw. dessen Personen-ID."
+      }
+     ],
+     [
+      {
+       "text": "Keine weiteren Unterlagen notwendig."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Wählen Sie den Grund der Abmeldung und geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss erhalten Sie eine Bestätigung. Die Angaben werden in der Hundekontrolle Ihrer Gemeinde und in AMICUS nachgeführt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Jegliche Meldungen im Zusammenhang mit Ihrem Hund müssen spätestens innert 10 Tagen nach dem Ereignis erfolgen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Tage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Abmeldung entstehen keine Kosten."
+      }
+     ],
+     [
+      {
+       "text": "Auskunft zu einer allfälligen Rückerstattung der Hundesteuer erhalten Sie bei Ihrer Gemeinde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt oder Steueramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kantonales Gesetz über das Halten von Hunden (HuG)",
+       "href": "https://www.sz.ch/public/upload/assets/3802/546_100.pdf"
+      },
+      {
+       "text": ", SRSZ 546.100."
+      }
+     ],
+     [
+      {
+       "text": "Tierseuchenverordnung (TSV)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1995/3716_3716_3716/de#art_16"
+      },
+      {
+       "text": ", SR 916.401 (ab Art. 16 ff.)."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Weiterführende Informationen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ich werde Hundehalter – Was muss ich wissen",
+       "href": "https://www.amicus.ch/Content/News/Flyer_DE.pdf"
+      }
+     ],
+     [
+      {
+       "text": "Benutzerhandbuch für Hundehaltende",
+       "href": "https://www.amicus.ch/content/news/handbuch_hundehalter_de.pdf"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "45": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5007",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Wenn Sie einen Hund neu in Ihren Haushalt aufnehmen oder mit einem Hund in eine Schwyzer Gemeinde ziehen, müssen Sie den Hund bei Ihrer Gemeinde anmelden."
+      }
+     ],
+     [
+      {
+       "text": "Die Anmeldung dient der Hundekontrolle und der Erhebung der Hundesteuer."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Die Erfassung eines neuen Hundes oder die Übernahme eines Hundes aus dem Ausland in der nationalen Hundedatenbank AMICUS muss durch Ihre Tierärztin bzw. Ihren Tierarzt anhand der Mikrochip-Nummer vorgenommen werden."
+      }
+     ],
+     [
+      {
+       "text": "Sind Sie noch nicht als Hundehalter/-in registriert, müssen Sie sich als Ersthundehalter/-in registrieren."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie wohnen in einer Schwyzer Gemeinde und nehmen einen Hund neu auf oder ziehen mit einem Hund zu."
+      }
+     ],
+     [
+      {
+       "text": "Sie sind bereits als Hundehalter/-in registriert und verfügen über eine Personen-ID in AMICUS."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kopie des Hundepasses oder des Impfausweises mit aktueller Mikrochip-Nummer."
+      }
+     ],
+     [
+      {
+       "text": "Für von der Hundesteuer befreite Hunde (§ 7 des Gesetzes über das Halten von Hunden) oder für Hunde mit Anrecht auf eine reduzierte Hundesteuer (§ 4 des Gesetzes über das Halten von Hunden) ist der entsprechende Nachweis einzureichen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben zum Hund und zur Halterin bzw. zum Halter an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss der Anmeldung erhalten Sie eine Bestätigung und Ihre Gemeinde erfasst den Hund in der Hundekontrolle."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Die Anmeldung muss spätestens innert 10 Tagen nach dem Ereignis (z. B. Erwerb des Hundes oder Zuzug) erfolgen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Tage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Für die Anmeldung entstehen keine Kosten."
+      }
+     ],
+     [
+      {
+       "text": "Die Höhe der Hundesteuer ist von Gemeinde zu Gemeinde unterschiedlich. Bitte informieren Sie sich direkt auf der Homepage Ihrer Gemeinde."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt oder Steueramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kantonales Gesetz über das Halten von Hunden (HuG)",
+       "href": "https://www.sz.ch/public/upload/assets/3802/546_100.pdf"
+      },
+      {
+       "text": ", SRSZ 546.100."
+      }
+     ],
+     [
+      {
+       "text": "Tierseuchenverordnung (TSV)",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1995/3716_3716_3716/de#art_16"
+      },
+      {
+       "text": ", SR 916.401 (ab Art. 16 ff.)."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Weiterführende Informationen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ich werde Hundehalter – Was muss ich wissen",
+       "href": "https://www.amicus.ch/Content/News/Flyer_DE.pdf"
+      }
+     ],
+     [
+      {
+       "text": "Benutzerhandbuch für Hundehaltende",
+       "href": "https://www.amicus.ch/content/news/handbuch_hundehalter_de.pdf"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "47": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=5009",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Die Wohnsitzbestätigung bestätigt den Eintrag im Einwohnerregister und wird auf persönliches Verlangen ausgestellt."
+      }
+     ],
+     [
+      {
+       "text": "Sie beinhaltet nebst den wesentlichsten Personendaten das Zu- bzw. Wegzugsdatum."
+      }
+     ],
+     [
+      {
+       "text": "Zusätzlich können Sie hier die Wohnsitzbestätigung bestellen, welche Sie für die SBB- und Ski-Abos benötigen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Sie wohnen aktuell in einer Schwyzer Gemeinde oder haben früher in einer Schwyzer Gemeinde gewohnt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Nicht erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Mit Klick auf den Button «Zum Formular» starten Sie den Vorgang."
+      }
+     ],
+     [
+      {
+       "text": "Geben Sie die erforderlichen Angaben an (mit einem * markierte Felder sind Pflichtangaben)."
+      }
+     ],
+     [
+      {
+       "text": "Nach Abschluss der Bestellung und der Bezahlung stellt Ihnen das Einwohneramt die Wohnsitzbestätigung über die von Ihnen ausgewählte Lieferart zu."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "2–3 Arbeitstage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Einzelperson auf Deutsch: CHF 10.00 pro Bescheinigung zzgl. allfälliger Versandkosten."
+      }
+     ],
+     [
+      {
+       "text": "Einzelperson fremdsprachig (Französisch, Italienisch oder Englisch): CHF 20.00 pro Bescheinigung zzgl. allfälliger Versandkosten."
+      }
+     ],
+     [
+      {
+       "text": "Familien (Deutsch und fremdsprachig): CHF 20.00 pro Bescheinigung für eine Familie zzgl. allfälliger Versandkosten."
+      }
+     ],
+     [
+      {
+       "text": "In speziellen Fällen kann es vorkommen, dass die Daten der Wohnsitzbestätigung manuell zusammengetragen werden müssen, da Archivdaten geprüft werden müssen. In diesem Fall erstattet Ihnen die Gemeinde die Online-Zahlung zurück und lässt Ihnen eine Rechnung zukommen. In der Regel sind bei diesen speziellen Fällen die Kosten höher."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Abteilung Einwohneramt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesetz über das Einwohnermeldewesen (EMG)",
+       "href": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf"
+      },
+      {
+       "text": ", § 16, SRSZ 111.110."
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "48": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=1013",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Der Lotteriefonds des Kantons Schwyz unterstützt gemeinnützige Projekte in Sport, Kultur, Sozialem und weiteren Bereichen mit Mitteln aus den Reingewinnen von SWISSLOS."
+      }
+     ],
+     [
+      {
+       "text": "Eingereichte Gesuche werden geprüft und anschliessend bewilligt oder abgelehnt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Gesuche bitte nur einmal einreichen."
+      }
+     ],
+     [
+      {
+       "text": "Politische Zwecke und gesetzliche Verpflichtungen werden nicht unterstützt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Wohltätiger, gemeinnütziger, kultureller oder sportlicher Zweck im öffentlichen Interesse."
+      }
+     ],
+     [
+      {
+       "text": "Bezug zum Kanton Schwyz."
+      }
+     ],
+     [
+      {
+       "text": "Angemessene Eigenleistung oder Mitfinanzierung."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Beschreibung des Vorhabens."
+      }
+     ],
+     [
+      {
+       "text": "Budget inkl. Finanzierungsplan."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kein Login erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Online-Gesuch einreichen."
+      }
+     ],
+     [
+      {
+       "text": "Prüfung und fachliche Beurteilung durch die zuständige Stelle."
+      }
+     ],
+     [
+      {
+       "text": "Entscheid über die Beitragsgewährung."
+      }
+     ],
+     [
+      {
+       "text": "Schriftliche Mitteilung des Entscheids."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "In der Regel 2–4 Wochen, abhängig von Vollständigkeit und Komplexität des Gesuchs."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kostenlos."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Finanzdepartement, Lotteriefonds\nPostfach 1230, 6431 Schwyz\nTel. +41 41 819 24 96\nE-Mail: fd@sz.ch"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Einführungsgesetz zum Bundesgesetz über Geldspiele (542.100)",
+       "href": "https://www.sz.ch/public/upload/assets/50755/542_100.pdf?fp=3"
+      }
+     ],
+     [
+      {
+       "text": "Verordnung zum Einführungsgesetz zum Bundesgesetz über Geldspiele (542.111)",
+       "href": "https://www.sz.ch/public/upload/assets/50756/542_111.pdf?fp=11"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "49": {
+  "formUrl": "https://onlineschalter.sz.ch/ExternalServices/EgovHubServicePage/EgovHubServicePage.aspx?externalId=543",
+  "sections": [
+   {
+    "h": "Kurzbeschrieb",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Ausnahmebewilligung für das Verbrennen von natürlichen Wald- und Feldabfällen ausserhalb Anlagen beantragen."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Wichtige Hinweise",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Korrektes Entsorgen von Wald-, Feld- und Gartenabfällen",
+       "href": "https://www.sz.ch/public/upload/assets/62228/Korrektes_Entsorgen_von_Wald-_Feld-_und_Gartenabfaellen.pdf?fp=5"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Voraussetzungen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Aus Hecken- und Weidepflege anfallende Gehölze sind grundsätzlich abzutransportieren und zu verwerten oder vor Ort zu verrotten."
+      }
+     ],
+     [
+      {
+       "text": "Das Verbrennen von Grüngut ist im Siedlungsgebiet und in dessen Nähe verboten. Auch ausserhalb des Siedlungsgebietes darf trockenes Gehölz aus Hecken- und Weidepflege nur in Ausnahmefällen vor Ort verbrannt werden."
+      }
+     ],
+     [
+      {
+       "text": "Kann das Holz vor Ort weder gelagert noch abtransportiert werden und liegt zudem eine behördlich angeordnete Rodung vor, kann eine Ausnahmebewilligung erteilt werden."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Benötigte Unterlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Standortangaben."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Anmeldung",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Kein Login erforderlich."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Ablauf",
+    "ordered": true,
+    "items": [
+     [
+      {
+       "text": "Feuerbewilligung beantragen."
+      }
+     ],
+     [
+      {
+       "text": "AFL/AWN prüft den Antrag."
+      }
+     ],
+     [
+      {
+       "text": "Bewilligung oder Ablehnung wird erteilt."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Fristen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Frühestmöglicher Zeitpunkt: 3 Arbeitstage ab Gesuchseinreichung."
+      }
+     ],
+     [
+      {
+       "text": "Maximale Dauer der Bewilligung: 30 Tage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Bearbeitungsdauer",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Max. 3 Tage."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Kosten",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Keine Kosten."
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Zuständige Stelle",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Amt für Landwirtschaft\nE-Mail: afl@sz.ch"
+      }
+     ],
+     [
+      {
+       "text": "Amt für Wald und Natur\nE-Mail: awn@sz.ch"
+      }
+     ]
+    ]
+   },
+   {
+    "h": "Rechtliche Grundlagen",
+    "ordered": false,
+    "items": [
+     [
+      {
+       "text": "Luftreinhalte-Verordnung",
+       "href": "https://www.fedlex.admin.ch/eli/cc/1986/208_208_208/de"
+      }
+     ]
+    ]
+   }
+  ]
+ }
+}
