@@ -34,6 +34,7 @@ export default function Header() {
       <div className="site-header__bar">
         <a href="/" className="site-header__logo" aria-label={t('Onlineschalter Kanton Schwyz, Startseite')}>
           <img src="/logo.svg" alt="Kanton Schwyz" width={254} height={35} />
+          <span className="site-header__name">Onlineschalter</span>
         </a>
 
         {showSearch && (

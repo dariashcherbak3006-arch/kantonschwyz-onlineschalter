@@ -212,6 +212,15 @@ main:focus {
 /* Logo left, all controls right */
 .site-header__logo {
   margin-right: auto;
+  text-decoration: none;
+}
+
+.site-header__name {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
 }
 
 /* ——— Header search ——— */
@@ -2224,6 +2233,11 @@ main {
     height: 1.9rem;
     object-fit: cover;
     object-position: right center;
+  }
+
+  /* No room next to the shield alone */
+  .site-header__name {
+    display: none;
   }
 }
 
