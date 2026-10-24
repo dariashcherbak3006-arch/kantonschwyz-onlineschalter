@@ -2303,6 +2303,11 @@ main {
   margin-top: 3rem;
 }
 
+/* Card points to the assistant, redundant while it is open */
+body:has(.hero--ai) .help-card {
+  display: none;
+}
+
 .help-card img {
   flex-shrink: 0;
   width: 8rem;

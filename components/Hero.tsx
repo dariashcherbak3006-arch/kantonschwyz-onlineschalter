@@ -82,7 +82,7 @@ export default function Hero() {
   }
 
   return (
-    <section className={`hero ${chatting ? 'hero--chat' : ''}`}>
+    <section className={`hero ${mode === 'ai' ? 'hero--ai' : ''} ${chatting ? 'hero--chat' : ''}`}>
       {!chatting && (
         <nav className="shortcuts" aria-label={t('Themen-Schnellzugriff')}>
           {topics.map((topic, i) => {
