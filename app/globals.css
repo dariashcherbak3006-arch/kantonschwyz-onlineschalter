@@ -2292,7 +2292,8 @@ main {
   align-items: center;
   gap: 1.5rem;
   max-width: 52rem;
-  margin: 3rem auto 0;
+  /* Gap above comes from the page's bottom padding */
+  margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
 }
