@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import { LangProvider } from '@/components/i18n'
+import { LangProvider, T } from '@/components/i18n'
 import ToTop from '@/components/ToTop'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <LangProvider>
           <a href="#main" className="skip-link">
-            Zum Inhalt springen
+            <T>Zum Inhalt springen</T>
           </a>
           <Header />
           <main id="main" tabIndex={-1}>

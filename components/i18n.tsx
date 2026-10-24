@@ -8,7 +8,7 @@ export type Lang = (typeof LANGS)[number]
 export const LANG_NAMES: Record<Lang, string> = { de: 'Deutsch', it: 'Italiano', fr: 'Français', en: 'English' }
 
 // German text is the key; missing entries fall back to German.
-// ponytail: service titles/descriptions and FAQ stay German until official translations exist.
+// UI labels live here; page content (services, detail pages, forms, FAQ) is in data/i18n/<lang>.json.
 const dict: Record<Exclude<Lang, 'de'>, Record<string, string>> = {
   fr: {
     Themen: 'Thèmes',
@@ -103,7 +103,27 @@ const dict: Record<Exclude<Lang, 'de'>, Record<string, string>> = {
     'Fragen zum Angebot beantwortet der Betreiber des Portals:': "Pour toute question, adressez-vous à l'exploitant du portail :",
     'Fragen zum Onlineschalter?': 'Des questions sur le guichet en ligne ?',
     'Support-Formular': 'Formulaire de support',
-    'Dieser Inhalt ist zurzeit nur auf Deutsch verfügbar.': "Ce contenu n'est actuellement disponible qu'en allemand.",
+    'Automatisch übersetzt. Verbindlich ist die deutsche Fassung.': 'Traduction automatique. Seule la version allemande fait foi.',
+    'Zum Inhalt springen': 'Aller au contenu',
+    'Häufige Fragen': 'Questions fréquentes',
+    'Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.': 'Réponses sur le guichet en ligne, votre compte et le login AGOV.',
+    'Vorschau des neuen Onlineschalters: Dieses Formular übermittelt noch keine Daten.': 'Aperçu du nouveau guichet en ligne : ce formulaire ne transmet encore aucune donnée.',
+    Fortschritt: 'Progression',
+    Schritt: 'Étape',
+    ausgefüllt: 'rempli',
+    Zusammenfassung: 'Récapitulatif',
+    'Ihre Angaben wurden nicht übermittelt': "Vos données n'ont pas été transmises",
+    'Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine verbindliche Meldung nutzen Sie bitte das offizielle Formular.':
+      "Ceci est un aperçu du nouveau guichet en ligne. Aucune donnée n'a été envoyée ni enregistrée. Pour une annonce officielle, veuillez utiliser le formulaire officiel.",
+    'Zum offiziellen Formular': 'Vers le formulaire officiel',
+    'Bitte prüfen Sie Ihre Angaben vor dem Absenden.': "Veuillez vérifier vos données avant l'envoi.",
+    Bearbeiten: 'Modifier',
+    Zurück: 'Retour',
+    Absenden: 'Envoyer',
+    Weiter: 'Suivant',
+    'Ungültige Eingabe': 'Saisie non valable',
+    'Bitte wählen': 'Veuillez choisir',
+    'Ausgewählt:': 'Sélectionné :',
     'Kurzbeschrieb': 'Description',
     'Wichtige Hinweise': 'Remarques importantes',
     'Voraussetzungen': 'Conditions',
@@ -241,7 +261,27 @@ const dict: Record<Exclude<Lang, 'de'>, Record<string, string>> = {
     'Fragen zum Angebot beantwortet der Betreiber des Portals:': 'Per domande si rivolga al gestore del portale:',
     'Fragen zum Onlineschalter?': 'Domande sullo sportello online?',
     'Support-Formular': 'Modulo di supporto',
-    'Dieser Inhalt ist zurzeit nur auf Deutsch verfügbar.': 'Questo contenuto è attualmente disponibile solo in tedesco.',
+    'Automatisch übersetzt. Verbindlich ist die deutsche Fassung.': 'Traduzione automatica. Fa fede la versione tedesca.',
+    'Zum Inhalt springen': 'Vai al contenuto',
+    'Häufige Fragen': 'Domande frequenti',
+    'Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.': 'Risposte sullo sportello online, sul Suo conto e sul login AGOV.',
+    'Vorschau des neuen Onlineschalters: Dieses Formular übermittelt noch keine Daten.': 'Anteprima del nuovo sportello online: questo modulo non trasmette ancora alcun dato.',
+    Fortschritt: 'Avanzamento',
+    Schritt: 'Passo',
+    ausgefüllt: 'compilato',
+    Zusammenfassung: 'Riepilogo',
+    'Ihre Angaben wurden nicht übermittelt': 'I Suoi dati non sono stati trasmessi',
+    'Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine verbindliche Meldung nutzen Sie bitte das offizielle Formular.':
+      "Questa è un'anteprima del nuovo sportello online. Nessun dato è stato inviato o salvato. Per una notifica vincolante utilizzi il modulo ufficiale.",
+    'Zum offiziellen Formular': 'Al modulo ufficiale',
+    'Bitte prüfen Sie Ihre Angaben vor dem Absenden.': "Verifichi i Suoi dati prima dell'invio.",
+    Bearbeiten: 'Modifica',
+    Zurück: 'Indietro',
+    Absenden: 'Invia',
+    Weiter: 'Avanti',
+    'Ungültige Eingabe': 'Inserimento non valido',
+    'Bitte wählen': 'Selezioni',
+    'Ausgewählt:': 'Selezionato:',
     'Kurzbeschrieb': 'Descrizione',
     'Wichtige Hinweise': 'Avvertenze importanti',
     'Voraussetzungen': 'Requisiti',
@@ -378,7 +418,27 @@ const dict: Record<Exclude<Lang, 'de'>, Record<string, string>> = {
     'Fragen zum Angebot beantwortet der Betreiber des Portals:': 'For questions, contact the portal operator:',
     'Fragen zum Onlineschalter?': 'Questions about the online counter?',
     'Support-Formular': 'Support form',
-    'Dieser Inhalt ist zurzeit nur auf Deutsch verfügbar.': 'This content is currently only available in German.',
+    'Automatisch übersetzt. Verbindlich ist die deutsche Fassung.': 'Automatically translated. The German version is binding.',
+    'Zum Inhalt springen': 'Skip to content',
+    'Häufige Fragen': 'Frequently asked questions',
+    'Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.': 'Answers about the online counter, your account and the AGOV login.',
+    'Vorschau des neuen Onlineschalters: Dieses Formular übermittelt noch keine Daten.': 'Preview of the new online counter: this form does not submit any data yet.',
+    Fortschritt: 'Progress',
+    Schritt: 'Step',
+    ausgefüllt: 'complete',
+    Zusammenfassung: 'Summary',
+    'Ihre Angaben wurden nicht übermittelt': 'Your details were not submitted',
+    'Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine verbindliche Meldung nutzen Sie bitte das offizielle Formular.':
+      'This is a preview of the new online counter. No data was sent or stored. For a binding submission, please use the official form.',
+    'Zum offiziellen Formular': 'Go to the official form',
+    'Bitte prüfen Sie Ihre Angaben vor dem Absenden.': 'Please check your details before submitting.',
+    Bearbeiten: 'Edit',
+    Zurück: 'Back',
+    Absenden: 'Submit',
+    Weiter: 'Next',
+    'Ungültige Eingabe': 'Invalid input',
+    'Bitte wählen': 'Please select',
+    'Ausgewählt:': 'Selected:',
     'Kurzbeschrieb': 'Summary',
     'Wichtige Hinweise': 'Important notes',
     'Voraussetzungen': 'Requirements',
@@ -425,10 +485,20 @@ const dict: Record<Exclude<Lang, 'de'>, Record<string, string>> = {
   }
 }
 
-const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void }>({ lang: 'de', setLang: () => {} })
+// Content translations are large, so each language loads only when someone picks it
+const CONTENT: Record<Exclude<Lang, 'de'>, () => Promise<{ default: Record<string, string> }>> = {
+  fr: () => import('@/data/i18n/fr.json'),
+  it: () => import('@/data/i18n/it.json'),
+  en: () => import('@/data/i18n/en.json')
+}
+
+type Content = { lang: Lang; map: Record<string, string> }
+
+const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void; content?: Content }>({ lang: 'de', setLang: () => {} })
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('de')
+  const [content, setContent] = useState<Content>()
 
   useEffect(() => {
     try {
@@ -439,6 +509,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = lang
+    if (lang !== 'de') CONTENT[lang]().then((m) => setContent({ lang, map: m.default }))
   }, [lang])
 
   const setLang = (l: Lang) => {
@@ -448,12 +519,18 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
     } catch {}
   }
 
-  return <Ctx.Provider value={{ lang, setLang }}>{children}</Ctx.Provider>
+  return <Ctx.Provider value={{ lang, setLang, content }}>{children}</Ctx.Provider>
 }
 
 export function useT() {
-  const { lang, setLang } = useContext(Ctx)
-  const t = (s: string) => (lang === 'de' ? s : (dict[lang][s] ?? s))
+  const { lang, setLang, content } = useContext(Ctx)
+  const t = (s: string) => {
+    if (lang === 'de') return s
+    // Keys are trimmed; inline text segments keep their surrounding spaces
+    const k = s.trim()
+    const tr = dict[lang][k] ?? (content?.lang === lang ? content.map[k] : undefined)
+    return tr ? s.replace(k, () => tr) : s
+  }
   return { lang, setLang, t }
 }
 
@@ -462,9 +539,9 @@ export function T({ children }: { children: string }) {
   return <>{useT().t(children)}</>
 }
 
-export function DeOnlyNote() {
+export function TranslatedNote() {
   const { lang, t } = useT()
-  return lang === 'de' ? null : <p className="de-only">{t('Dieser Inhalt ist zurzeit nur auf Deutsch verfügbar.')}</p>
+  return lang === 'de' ? null : <p className="de-only">{t('Automatisch übersetzt. Verbindlich ist die deutsche Fassung.')}</p>
 }
 
 // Kommunal vs. kantonal marker on cards, rows and detail pages

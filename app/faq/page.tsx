@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { T } from '@/components/i18n'
 
 export const metadata: Metadata = {
   title: 'FAQ – Onlineschalter Kanton Schwyz',
@@ -56,15 +57,25 @@ const sections = [
 export default function FaqPage() {
   return (
     <section className="faq">
-      <h1>Häufige Fragen</h1>
-      <p className="faq__lead">Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.</p>
+      <h1>
+        <T>Häufige Fragen</T>
+      </h1>
+      <p className="faq__lead">
+        <T>Antworten rund um den Onlineschalter, Ihr Konto und das AGOV-Login.</T>
+      </p>
       {sections.map((sec) => (
         <div key={sec.id}>
-          <h2 id={sec.id}>{sec.title}</h2>
+          <h2 id={sec.id}>
+            <T>{sec.title}</T>
+          </h2>
           {sec.items.map(([q, a]) => (
             <details key={q} className="glass">
-              <summary>{q}</summary>
-              <p>{a}</p>
+              <summary>
+                <T>{q}</T>
+              </summary>
+              <p>
+                <T>{a}</T>
+              </p>
             </details>
           ))}
         </div>

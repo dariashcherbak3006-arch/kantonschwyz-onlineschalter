@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { services } from '@/data/services'
 import { getDetail } from '@/data/details'
 import { FORMS } from '@/data/forms'
-import { DeOnlyNote, T } from '@/components/i18n'
+import { TranslatedNote, T } from '@/components/i18n'
 import StepForm from '@/components/StepForm'
 
 export function generateStaticParams() {
@@ -28,14 +28,18 @@ export default async function FormPage({ params }: { params: Promise<{ id: strin
           <T>Startseite</T>
         </a>
         <span aria-hidden="true">/</span>
-        <a href={sv.href}>{sv.title}</a>
+        <a href={sv.href}>
+          <T>{sv.title}</T>
+        </a>
         <span aria-hidden="true">/</span>
         <span>
           <T>Formular</T>
         </span>
       </nav>
-      <h1>{form.title}</h1>
-      <DeOnlyNote />
+      <h1>
+        <T>{form.title}</T>
+      </h1>
+      <TranslatedNote />
       <StepForm steps={form.steps} officialUrl={getDetail(id)!.formUrl} />
     </article>
   )

@@ -215,7 +215,7 @@ export const norm = (str: string) =>
 export function searchServices(query: string, t: (s: string) => string = (s) => s) {
   const words = norm(query).split(/\s+/).filter(Boolean)
   return services.filter((sv) => {
-    const hay = norm(`${sv.title} ${sv.desc} ${sv.group} ${sv.topic} ${t(sv.group)} ${t(sv.topic)}`)
+    const hay = norm(`${sv.title} ${sv.desc} ${sv.group} ${sv.topic} ${t(sv.group)} ${t(sv.topic)} ${t(sv.title)} ${t(sv.desc)}`)
     return words.every((w) => hay.includes(w))
   })
 }

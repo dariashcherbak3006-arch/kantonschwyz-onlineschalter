@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type FormEvent } from 'react'
 import type { Field, Rule, Step } from '@/data/forms'
 import { ExternalIcon } from './icons'
 import { useGemeinde } from './gemeinde'
+import { useT } from './i18n'
 
 type Values = Record<string, string>
 
@@ -55,6 +56,7 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
   const [sent, setSent] = useState(false)
   const top = useRef<HTMLDivElement>(null)
   const [myGemeinde, setMyGemeinde] = useGemeinde()
+  const { t } = useT()
 
   // Preselect "Meine Gemeinde" when this service is offered there
   const gemeindeOptions = steps.flatMap((s) => s.fields).find((f) => f.name === 'gemeinde')?.options ?? []
@@ -92,18 +94,19 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
   const labels = [...visible.map((s) => s.title), 'Zusammenfassung']
   const display = (f: Field) => {
     const v = f.compute ? computed(f, values) : values[f.name]?.trim()
-    return !v ? '–' : f.type === 'date' ? swissDate(v) : v
+    // Values stay German (rules compare them); only what is shown gets translated
+    return !v ? '–' : f.type === 'date' ? swissDate(v) : t(v)
   }
 
   return (
     <div className="wizard" ref={top}>
-      <p className="wizard__notice">Vorschau des neuen Onlineschalters: Dieses Formular übermittelt noch keine Daten.</p>
+      <p className="wizard__notice">{t('Vorschau des neuen Onlineschalters: Dieses Formular übermittelt noch keine Daten.')}</p>
 
       <div className="steps">
         <div
           className="steps__track"
           role="progressbar"
-          aria-label="Fortschritt"
+          aria-label={t('Fortschritt')}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={Math.round(progress * 100)}
@@ -122,39 +125,40 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
                   className="steps__dot"
                   disabled={sent || i >= current}
                   aria-current={i === current ? 'step' : undefined}
-                  aria-label={`Schritt ${i + 1}: ${label}`}
+                  aria-label={`${t('Schritt')} ${i + 1}: ${t(label)}`}
                   onClick={() => go(i)}
                 />
-                <span className="steps__label">{label}</span>
+                <span className="steps__label">{t(label)}</span>
               </li>
             )
           })}
         </ol>
-        <p className="steps__pct">{Math.round(progress * 100)} % ausgefüllt</p>
+        <p className="steps__pct">{Math.round(progress * 100)} % {t('ausgefüllt')}</p>
       </div>
 
       {sent ? (
         <div className="wizard__card glass wizard__done">
-          <h2>Ihre Angaben wurden nicht übermittelt</h2>
+          <h2>{t('Ihre Angaben wurden nicht übermittelt')}</h2>
           <p>
-            Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine
-            verbindliche Meldung nutzen Sie bitte das offizielle Formular.
+            {t(
+              'Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine verbindliche Meldung nutzen Sie bitte das offizielle Formular.'
+            )}
           </p>
           <a className="btn-primary" href={officialUrl} target="_blank" rel="noopener noreferrer">
-            Zum offiziellen Formular
+            {t('Zum offiziellen Formular')}
             <ExternalIcon />
           </a>
         </div>
       ) : current >= reviewIndex ? (
         <div className="wizard__card glass">
-          <h2>Zusammenfassung</h2>
-          <p className="wizard__lead">Bitte prüfen Sie Ihre Angaben vor dem Absenden.</p>
+          <h2>{t('Zusammenfassung')}</h2>
+          <p className="wizard__lead">{t('Bitte prüfen Sie Ihre Angaben vor dem Absenden.')}</p>
           {visible.map((s, i) => (
             <section key={s.title + i} className="review">
               <div className="review__head">
-                <h3>{s.intro ?? s.title}</h3>
+                <h3>{t(s.intro ?? s.title)}</h3>
                 <button type="button" className="link-btn" onClick={() => go(i)}>
-                  Bearbeiten
+                  {t('Bearbeiten')}
                 </button>
               </div>
               <dl>
@@ -162,7 +166,7 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
                   .filter((f) => f.type !== 'info' && !fieldState(f, values).hidden)
                   .map((f) => (
                     <div key={f.name}>
-                      <dt>{f.label}</dt>
+                      <dt>{t(f.label)}</dt>
                       <dd>{display(f)}</dd>
                     </div>
                   ))}
@@ -171,18 +175,18 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
           ))}
           <div className="wizard__nav">
             <button type="button" className="btn-secondary" onClick={() => go(current - 1)}>
-              Zurück
+              {t('Zurück')}
             </button>
             <button type="button" className="btn-primary" onClick={() => setSent(true)}>
-              Absenden
+              {t('Absenden')}
             </button>
           </div>
         </div>
       ) : (
         <form className="wizard__card glass" onSubmit={next}>
-          <h2>{step.intro ?? step.title}</h2>
+          <h2>{t(step.intro ?? step.title)}</h2>
           {/* note is sanitized HTML from scripts/convert-forms.py (links, lists, bold only) */}
-          {step.note && <div className="wizard__lead wizard__note" dangerouslySetInnerHTML={{ __html: step.note }} />}
+          {step.note && <div className="wizard__lead wizard__note" dangerouslySetInnerHTML={{ __html: t(step.note) }} />}
           <div className="fields">
             {step.fields.map((f) => {
               const st = fieldState(f, values)
@@ -201,11 +205,11 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
           <div className="wizard__nav">
             {current > 0 && (
               <button type="button" className="btn-secondary" onClick={() => go(current - 1)}>
-                Zurück
+                {t('Zurück')}
               </button>
             )}
             <button type="submit" className="btn-primary">
-              Weiter
+              {t('Weiter')}
             </button>
           </div>
         </form>
@@ -228,6 +232,7 @@ function FieldInput({
   const id = `f-${f.name}`
   const hintId = f.hint ? `${id}-hint` : undefined
   const ref = useRef<HTMLInputElement>(null)
+  const { t } = useT()
 
   // Patterns are checked here (not via the pattern attribute) so the canton's own error message shows
   useEffect(() => {
@@ -236,18 +241,18 @@ function FieldInput({
     try {
       ok = !value || new RegExp(f.pattern, 'u').test(value)
     } catch {}
-    ref.current.setCustomValidity(ok ? '' : (f.patternMessage ?? 'Ungültige Eingabe'))
-  }, [value, f.pattern, f.patternMessage])
+    ref.current.setCustomValidity(ok ? '' : t(f.patternMessage ?? 'Ungültige Eingabe'))
+  }, [value, f.pattern, f.patternMessage, t])
 
   const label = (
     <>
-      {f.label}
+      {t(f.label)}
       {required && <span aria-hidden="true"> *</span>}
     </>
   )
   const hint = f.hint && (
     <p id={hintId} className="field__hint">
-      {f.hint}
+      {t(f.hint)}
     </p>
   )
   const style = { gridColumn: `span ${f.span ?? 12}` }
@@ -255,8 +260,8 @@ function FieldInput({
   if (f.type === 'info') {
     return (
       <div className="field field--info" style={style}>
-        <p className="field__info-title">{f.label}</p>
-        {f.html && <div dangerouslySetInnerHTML={{ __html: f.html }} />}
+        <p className="field__info-title">{t(f.label)}</p>
+        {f.html && <div dangerouslySetInnerHTML={{ __html: t(f.html) }} />}
       </div>
     )
   }
@@ -268,7 +273,7 @@ function FieldInput({
         {f.options!.map((o) => (
           <label key={o} className="radio">
             <input type="radio" name={f.name} value={o} checked={value === o} required={required} onChange={() => onChange(o)} />
-            {o}
+            {t(o)}
           </label>
         ))}
         {hint}
@@ -300,9 +305,11 @@ function FieldInput({
       <label htmlFor={id}>{label}</label>
       {f.type === 'select' ? (
         <select {...common} value={value}>
-          <option value="">Bitte wählen</option>
+          <option value="">{t('Bitte wählen')}</option>
           {f.options!.map((o) => (
-            <option key={o}>{o}</option>
+            <option key={o} value={o}>
+              {t(o)}
+            </option>
           ))}
         </select>
       ) : f.type === 'textarea' ? (
@@ -319,7 +326,7 @@ function FieldInput({
             aria-describedby={hintId}
             onChange={(e) => onChange([...(e.target.files ?? [])].map((x) => x.name).join(', '))}
           />
-          {value && <p className="field__hint">Ausgewählt: {value}</p>}
+          {value && <p className="field__hint">{t('Ausgewählt:')} {value}</p>}
         </>
       ) : (
         <input
@@ -328,7 +335,7 @@ function FieldInput({
           value={value}
           type={f.type}
           inputMode={f.inputMode}
-          placeholder={f.placeholder}
+          placeholder={f.placeholder && t(f.placeholder)}
           readOnly={f.readonly}
           min={f.type === 'date' ? dateLimit(f.min) : f.minValue}
           max={f.type === 'date' ? dateLimit(f.max) : f.maxValue}

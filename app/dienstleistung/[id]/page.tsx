@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { services, type Section } from '@/data/services'
 import { getDetail } from '@/data/details'
-import { DeOnlyNote, LevelBadge, T } from '@/components/i18n'
+import { TranslatedNote, LevelBadge, T } from '@/components/i18n'
 import { ExternalIcon, TopicIcon } from '@/components/icons'
 import PageBot from '@/components/PageBot'
 import { Availability } from '@/components/gemeinde'
@@ -30,11 +30,13 @@ function Item({ segs }: { segs: Section['items'][number] }) {
   return segs.map((g, i) =>
     g.href ? (
       <a key={i} href={g.href} {...newTab}>
-        {g.text}
+        <T>{g.text}</T>
         <ExternalIcon />
       </a>
     ) : (
-      <span key={i}>{g.text}</span>
+      <span key={i}>
+        <T>{g.text}</T>
+      </span>
     )
   )
 }
@@ -43,7 +45,7 @@ function Item({ segs }: { segs: Section['items'][number] }) {
 function Linkify({ text }: { text: string }) {
   return text.split(/([\w.+-]+@[\w-]+\.[\w.-]*\w|\+41(?: ?\d){9})/).map((part, i) =>
     i % 2 === 0 ? (
-      part
+      <T key={i}>{part}</T>
     ) : (
       <a key={i} href={part.includes('@') ? `mailto:${part}` : `tel:${part.replace(/ /g, '')}`}>
         {part}
@@ -80,10 +82,14 @@ export default async function ServicePage({ params }: { params: Promise<{ id: st
           </span>
         </nav>
 
-        <h1>{sv.title}</h1>
+        <h1>
+          <T>{sv.title}</T>
+        </h1>
         <LevelBadge level={sv.level} />
-        <p className="detail__lead">{sv.desc}</p>
-        <DeOnlyNote />
+        <p className="detail__lead">
+          <T>{sv.desc}</T>
+        </p>
+        <TranslatedNote />
 
         <div className="detail__grid">
           <div className="detail__body">

@@ -181,7 +181,7 @@ export default function Hero() {
             <div className="life__active glass">
               <LifeIcon icon={lifeCase.icon} />
               <p>
-                <strong>{t(lifeCase.title)}:</strong> {lifeCase.intro}{' '}
+                <strong>{t(lifeCase.title)}:</strong> {t(lifeCase.intro)}{' '}
                 <a href={`#life-${lifeCase.slug}`} onClick={() => openLife(lifeCase.slug)}>
                   {t('Was ist zu tun?')}
                 </a>
@@ -216,10 +216,10 @@ export default function Hero() {
                           <LevelBadge level={sv.level} />
                         </span>
                         <span className="service__title">
-                          {sv.title}
+                          {t(sv.title)}
                           {sv.external && <ExternalIcon />}
                         </span>
-                        <span className="service__desc">{sv.desc}</span>
+                        <span className="service__desc">{t(sv.desc)}</span>
                         {(sv.dauer || sv.kosten) && (
                           <span className="service__facts">
                             {sv.dauer && (
@@ -256,26 +256,26 @@ export default function Hero() {
                   {t(l.title)}
                 </summary>
                 <div className="life__body">
-                  <p className="life__intro">{l.intro}</p>
+                  <p className="life__intro">{t(l.intro)}</p>
                   <ol className="timeline">
                     {l.steps.map((s) => (
                       <li key={s.title} className="timeline__step">
-                        <h3>{s.title}</h3>
-                        <p>{s.text}</p>
+                        <h3>{t(s.title)}</h3>
+                        <p>{t(s.text)}</p>
                         {!!(s.services?.length || s.links?.length) && (
                           <div className="chat__links">
                             {s.services?.map((id) => {
                               const sv = services.find((x) => x.id === id)!
                               return (
                                 <a key={id} href={sv.href} className="btn-link">
-                                  {sv.title}
+                                  {t(sv.title)}
                                   {sv.external && <ExternalIcon />}
                                 </a>
                               )
                             })}
                             {s.links?.map((ln) => (
                               <a key={ln.href} href={ln.href} className="btn-link" target="_blank" rel="noopener noreferrer">
-                                {ln.label}
+                                {t(ln.label)}
                                 <ExternalIcon />
                               </a>
                             ))}

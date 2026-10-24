@@ -18,6 +18,19 @@
   --glass-edge: rgba(255, 255, 255, 0.65);
   --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 -1px 0 rgba(255, 255, 255, 0.3);
   --shadow-soft: 0 12px 40px rgba(150, 0, 0, 0.1);
+  /* Federal design system tokens (github.com/swiss/designsystem, app/tailwind.config.js),
+     used for form fields, info box and preview notice */
+  --ch-border: #6b7280; /* text-500, 4.8:1 on white */
+  --ch-radius-xs: 0.0625rem;
+  --ch-radius: 0.1875rem;
+  --ch-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  --ch-shadow-lg: 0 2px 6px -1px rgba(0, 0, 0, 0.06), 0 5px 20px -3px rgba(0, 0, 0, 0.08);
+  --ch-error: #e53940; /* red-500 */
+  --ch-error-text: #99191e; /* red-800 */
+  --ch-info-bg: #eff6ff; /* blue-50 */
+  --ch-info-text: #1d4ed8; /* blue-700 */
+  --ch-warning-bg: #fff7ed; /* orange-50 */
+  --ch-warning-text: #9a3412; /* orange-800 */
 }
 
 *,
@@ -707,12 +720,14 @@ main:focus {
   scroll-margin-top: calc((var(--header-h) + 1rem) / var(--text-scale, 1));
 }
 
+/* Federal design system .notification--warning */
 .wizard__notice {
   margin: 0 0 1.5rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.75rem;
-  background: var(--red-tint);
-  color: var(--red-dark);
+  padding: 0.75rem 1rem;
+  border-radius: var(--ch-radius);
+  background: var(--ch-warning-bg);
+  color: var(--ch-warning-text);
+  box-shadow: var(--ch-shadow-lg);
   font-size: 0.9rem;
 }
 
@@ -852,18 +867,43 @@ main:focus {
   margin-bottom: 0.35rem;
 }
 
-.field input:not([type='radio']),
+/* Federal design system .input: white, square, grey border, light shadow, 44px (48px from 1536px) */
+.field input:not([type='radio'], [type='checkbox']),
 .field select,
 .field textarea {
   width: 100%;
-  min-height: 2.9rem;
-  padding: 0.6rem 0.85rem;
-  border: 1px solid var(--field-border);
-  border-radius: 0.75rem;
-  background: rgba(255, 255, 255, 0.9);
+  min-height: 44px;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--ch-border);
+  border-radius: var(--ch-radius-xs);
+  background: #fff;
+  box-shadow: var(--ch-shadow);
   font: inherit;
   color: var(--ink);
   transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+@media (min-width: 1536px) {
+  .field input:not([type='radio'], [type='checkbox']),
+  .field select,
+  .field textarea {
+    min-height: 48px;
+  }
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--muted);
+}
+
+/* Federal design system .select: chevron in its own cell behind a divider line */
+.field select {
+  appearance: none;
+  padding-right: 4rem;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%231b1b1f' stroke-width='1.5'/%3E%3C/svg%3E") right 0.75rem center / 1.5rem no-repeat,
+    linear-gradient(var(--ch-border), var(--ch-border)) right 3rem center / 1px 100% no-repeat,
+    #fff;
 }
 
 .field textarea {
@@ -881,7 +921,8 @@ main:focus {
 /* Only flag invalid fields once the person has typed something */
 .field input:not(:placeholder-shown):user-invalid,
 .field select:user-invalid {
-  border-color: var(--red-dark);
+  border-color: var(--ch-error);
+  color: var(--ch-error-text);
 }
 
 .radio {
@@ -988,17 +1029,24 @@ main:focus {
   list-style: disc;
 }
 
-.wizard__note a,
-.field--info a {
+.wizard__note a {
   color: var(--red-dark);
 }
 
+/* Federal design system .notification--info; links take the text colour, underlined */
 .field--info {
-  padding: 0.85rem 1rem;
-  border-left: 4px solid var(--red);
-  border-radius: 0.6rem;
-  background: var(--red-tint);
+  padding: 1rem;
+  border-radius: var(--ch-radius);
+  background: var(--ch-info-bg);
+  color: var(--ch-info-text);
+  box-shadow: var(--ch-shadow-lg);
   font-size: 0.92rem;
+}
+
+.field--info a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .field__info-title {

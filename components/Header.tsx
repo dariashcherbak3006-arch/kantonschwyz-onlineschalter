@@ -64,7 +64,7 @@ export default function Header() {
                         {group.items.map((item) => (
                           <li key={item.id}>
                             <a href={item.href} className="mega__link">
-                              {item.title}
+                              {t(item.title)}
                               {item.external && <ExternalIcon />}
                             </a>
                           </li>
@@ -148,7 +148,7 @@ export default function Header() {
               'Melden Sie sich mit AGOV an, dem Behörden-Login der Schweiz. Damit erhalten Sie sicheren Zugang zu Ihrem Konto und allen Dienstleistungen des Onlineschalters.'
             )}
           </p>
-          <a className="login__agov" href="https://onlineschalter.sz.ch/Pages/Authentication/Login.aspx?IDP=OpenID">
+          <a className="login__agov" href="https://auth.agov.admin.ch/SAML2/SSO/">
             {t('Mit AGOV anmelden')}
           </a>
           <a className="login__more" href="/faq#konto" onClick={() => login.current?.close()}>
@@ -197,7 +197,7 @@ function SearchBox({ id, autoFocus }: { id: string; autoFocus?: boolean }) {
               <li key={sv.id}>
                 <a href={sv.href} className="mega__link">
                   <span className="service__group">{t(sv.group)}</span>
-                  {sv.title}
+                  {t(sv.title)}
                   {sv.external && <ExternalIcon />}
                 </a>
               </li>

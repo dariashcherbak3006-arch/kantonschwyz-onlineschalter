@@ -58,7 +58,7 @@ export function ChatLog({ messages, loading }: { messages: Msg[]; loading: boole
             <div className="chat__links">
               {m.links.map((l) => (
                 <a key={l.href} href={l.href} className="btn-link">
-                  {l.title}
+                  {t(l.title)}
                   {l.external && <ExternalIcon />}
                 </a>
               ))}
