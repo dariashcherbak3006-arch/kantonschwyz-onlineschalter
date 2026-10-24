@@ -55,6 +55,8 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
   const [current, setCurrent] = useState(0)
   const [sent, setSent] = useState(false)
   const top = useRef<HTMLDivElement>(null)
+  // Set by navigation so the new card's heading takes focus (not on first load)
+  const focusCard = useRef(false)
   const [myGemeinde, setMyGemeinde] = useGemeinde()
   const { t } = useT()
 
@@ -79,8 +81,16 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
 
   const go = (i: number) => {
     setCurrent(i)
+    focusCard.current = true
     top.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+
+  // Screen readers and keyboard users land on the new step instead of a removed button
+  useEffect(() => {
+    if (!focusCard.current) return
+    focusCard.current = false
+    top.current?.querySelector<HTMLElement>('.wizard__card h2')?.focus({ preventScroll: true })
+  }, [current, sent])
 
   function next(e: FormEvent) {
     e.preventDefault()
@@ -138,7 +148,7 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
 
       {sent ? (
         <div className="wizard__card glass wizard__done">
-          <h2>{t('Ihre Angaben wurden nicht übermittelt')}</h2>
+          <h2 tabIndex={-1}>{t('Ihre Angaben wurden nicht übermittelt')}</h2>
           <p>
             {t(
               'Dies ist eine Vorschau des neuen Onlineschalters. Es wurden keine Daten gesendet oder gespeichert. Für eine verbindliche Meldung nutzen Sie bitte das offizielle Formular.'
@@ -151,7 +161,7 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
         </div>
       ) : current >= reviewIndex ? (
         <div className="wizard__card glass">
-          <h2>{t('Zusammenfassung')}</h2>
+          <h2 tabIndex={-1}>{t('Zusammenfassung')}</h2>
           <p className="wizard__lead">{t('Bitte prüfen Sie Ihre Angaben vor dem Absenden.')}</p>
           {visible.map((s, i) => (
             <section key={s.title + i} className="review">
@@ -177,16 +187,17 @@ export default function StepForm({ steps, officialUrl }: { steps: Step[]; offici
             <button type="button" className="btn-secondary" onClick={() => go(current - 1)}>
               {t('Zurück')}
             </button>
-            <button type="button" className="btn-primary" onClick={() => setSent(true)}>
+            <button type="button" className="btn-primary" onClick={() => ((focusCard.current = true), setSent(true))}>
               {t('Absenden')}
             </button>
           </div>
         </div>
       ) : (
         <form className="wizard__card glass" onSubmit={next}>
-          <h2>{t(step.intro ?? step.title)}</h2>
+          <h2 tabIndex={-1}>{t(step.intro ?? step.title)}</h2>
           {/* note is sanitized HTML from scripts/convert-forms.py (links, lists, bold only) */}
           {step.note && <div className="wizard__lead wizard__note" dangerouslySetInnerHTML={{ __html: t(step.note) }} />}
+          <p className="field__hint">{t('Mit * markierte Felder sind Pflichtfelder.')}</p>
           <div className="fields">
             {step.fields.map((f) => {
               const st = fieldState(f, values)
@@ -297,6 +308,7 @@ function FieldInput({
     id,
     required,
     'aria-describedby': hintId,
+    autoComplete: f.autocomplete ?? 'off',
     onChange: (e: { target: { value: string } }) => onChange(e.target.value)
   }
 
@@ -339,7 +351,6 @@ function FieldInput({
           readOnly={f.readonly}
           min={f.type === 'date' ? dateLimit(f.min) : f.minValue}
           max={f.type === 'date' ? dateLimit(f.max) : f.maxValue}
-          autoComplete="off"
         />
       )}
       {hint}

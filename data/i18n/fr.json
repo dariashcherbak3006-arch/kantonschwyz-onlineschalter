@@ -754,5 +754,17 @@
  "Sie müssen in der Zwischenzeit nichts weiter tun. Wenn Sie unsicher sind, ob Sie weiter Mahnungen erhalten, kontaktieren Sie uns – wir geben Ihnen Auskunft.": "Vous n'avez rien d'autre à faire entre-temps. Si vous ne savez pas si vous allez encore recevoir des rappels, contactez-nous – nous vous renseignons volontiers.",
  "In der Regel innerhalb von 5 Arbeitstagen": "En général dans un délai de 5 jours ouvrables",
  "Bei einer Ratenzahlung fallen Verzugszinsen an – aktuell 4 % pro Jahr. Es kommen keine weiteren Gebühren dazu. Die genaue Höhe steht in Ihrem Entscheid.": "Un paiement échelonné entraîne des intérêts moratoires – actuellement 4 % par an. Aucun autre frais ne s'y ajoute. Le montant exact figure dans votre décision.",
- "Rufen Sie uns an, wir behandeln Ihr Anliegen vertraulich.": "Appelez-nous, nous traitons votre demande en toute confidentialité."
+ "Rufen Sie uns an, wir behandeln Ihr Anliegen vertraulich.": "Appelez-nous, nous traitons votre demande en toute confidentialité.",
+ "Erklärung zur Barrierefreiheit": "Déclaration d'accessibilité",
+ "Der Onlineschalter soll für alle Menschen nutzbar sein, auch mit Behinderung.": "Le guichet en ligne doit être utilisable par toutes et tous, y compris les personnes en situation de handicap.",
+ "Standard": "Norme",
+ "Massstab ist der eCH-0059 Accessibility Standard (Version 3.0). Er verlangt die Konformitätsstufe AA der Web Content Accessibility Guidelines (WCAG 2.1).": "La référence est la norme d'accessibilité eCH-0059 (version 3.0). Elle exige le niveau de conformité AA des Web Content Accessibility Guidelines (WCAG 2.1).",
+ "Der Onlineschalter ist teilweise konform. Grundlage ist eine Selbstprüfung (Stand: Oktober 2026), keine externe Zertifizierung.": "Le guichet en ligne est partiellement conforme. Cette évaluation repose sur un auto-contrôle (état : octobre 2026), et non sur une certification externe.",
+ "Bekannte Einschränkungen": "Limitations connues",
+ "Das animierte Maskottchen lässt sich nicht anhalten.": "La mascotte animée ne peut pas être mise en pause.",
+ "Bei den Erklärvideos sind Untertitel und Audiodeskription noch nicht geprüft.": "Les sous-titres et l'audiodescription des vidéos explicatives n'ont pas encore été vérifiés.",
+ "Übersetzungen ins Französische, Italienische und Englische sind automatisch erstellt. Nicht übersetzte Stellen erscheinen auf Deutsch.": "Les traductions en français, en italien et en anglais sont automatiques. Les passages non traduits s'affichent en allemand.",
+ "Informationen in Leichter Sprache und in Gebärdensprache sind noch nicht verfügbar.": "Les informations en langage simplifié et en langue des signes ne sont pas encore disponibles.",
+ "Barriere melden": "Signaler un obstacle",
+ "Stossen Sie auf eine Barriere? Melden Sie sie uns, damit wir sie beheben können.": "Vous rencontrez un obstacle ? Signalez-le-nous afin que nous puissions le corriger."
 }

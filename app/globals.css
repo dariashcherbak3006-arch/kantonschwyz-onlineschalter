@@ -45,6 +45,8 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* Anchors, scrollIntoView and keyboard focus stop below the fixed header (WCAG 2.4.11) */
+  scroll-padding-top: calc(var(--header-h) + 1rem);
 }
 
 body {
@@ -97,8 +99,9 @@ ul {
   top: 1rem;
 }
 
-/* Skip-link target only, not interactive */
-main:focus {
+/* Skip-link and step-change targets only, not interactive */
+main:focus,
+.wizard__card h2:focus {
   outline: none;
 }
 
@@ -648,10 +651,6 @@ main:focus {
 
 .detail--form {
   max-width: 52rem;
-}
-
-.wizard {
-  scroll-margin-top: calc((var(--header-h) + 1rem) / var(--text-scale, 1));
 }
 
 /* Federal design system .notification--warning */
@@ -1269,7 +1268,6 @@ main:focus {
 .life__item {
   margin-bottom: 0.6rem;
   border-radius: 1rem;
-  scroll-margin-top: calc((var(--header-h) + 1rem) / var(--text-scale, 1));
 }
 
 .life__item summary {
@@ -1529,7 +1527,6 @@ body:has(#page-bot) .totop {
   padding-left: 0.75rem;
   border-left: 4px solid var(--red);
   font-size: 1.25rem;
-  scroll-margin-top: calc((var(--header-h) + 1rem) / var(--text-scale, 1));
 }
 
 .faq details {
@@ -1632,10 +1629,6 @@ main {
   color: var(--red);
 }
 
-.results__topic {
-  scroll-margin-top: calc((var(--header-h) + 1rem) / var(--text-scale, 1));
-}
-
 @media (max-width: 640px) {
   .shortcuts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1701,8 +1694,8 @@ main {
   color: var(--red);
 }
 
-.mode-switch__opt[aria-checked='true'],
-.view-toggle button[aria-checked='true'] {
+.mode-switch__opt[aria-pressed='true'],
+.view-toggle button[aria-pressed='true'] {
   background: var(--red);
   color: #fff;
   box-shadow: 0 4px 14px rgba(246, 0, 0, 0.3);

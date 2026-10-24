@@ -715,5 +715,17 @@
  "Sie müssen in der Zwischenzeit nichts weiter tun. Wenn Sie unsicher sind, ob Sie weiter Mahnungen erhalten, kontaktieren Sie uns – wir geben Ihnen Auskunft.": "You don't need to do anything else in the meantime. If you are unsure whether you will keep receiving reminders, contact us – we will be happy to advise you.",
  "In der Regel innerhalb von 5 Arbeitstagen": "Usually within 5 working days",
  "Bei einer Ratenzahlung fallen Verzugszinsen an – aktuell 4 % pro Jahr. Es kommen keine weiteren Gebühren dazu. Die genaue Höhe steht in Ihrem Entscheid.": "Payment in instalments incurs default interest – currently 4% per year. There are no further fees. The exact amount is stated in your decision.",
- "Rufen Sie uns an, wir behandeln Ihr Anliegen vertraulich.": "Call us – we treat your request confidentially."
+ "Rufen Sie uns an, wir behandeln Ihr Anliegen vertraulich.": "Call us – we treat your request confidentially.",
+ "Erklärung zur Barrierefreiheit": "Accessibility statement",
+ "Der Onlineschalter soll für alle Menschen nutzbar sein, auch mit Behinderung.": "The online counter should be usable by everyone, including people with disabilities.",
+ "Standard": "Standard",
+ "Massstab ist der eCH-0059 Accessibility Standard (Version 3.0). Er verlangt die Konformitätsstufe AA der Web Content Accessibility Guidelines (WCAG 2.1).": "The benchmark is the eCH-0059 Accessibility Standard (version 3.0). It requires conformance level AA of the Web Content Accessibility Guidelines (WCAG 2.1).",
+ "Der Onlineschalter ist teilweise konform. Grundlage ist eine Selbstprüfung (Stand: Oktober 2026), keine externe Zertifizierung.": "The online counter is partially conformant. This is based on a self-assessment (as of October 2026), not an external certification.",
+ "Bekannte Einschränkungen": "Known limitations",
+ "Das animierte Maskottchen lässt sich nicht anhalten.": "The animated mascot cannot be paused.",
+ "Bei den Erklärvideos sind Untertitel und Audiodeskription noch nicht geprüft.": "Captions and audio description of the explainer videos have not been checked yet.",
+ "Übersetzungen ins Französische, Italienische und Englische sind automatisch erstellt. Nicht übersetzte Stellen erscheinen auf Deutsch.": "Translations into French, Italian and English are automatic. Untranslated passages appear in German.",
+ "Informationen in Leichter Sprache und in Gebärdensprache sind noch nicht verfügbar.": "Information in easy-to-read language and in sign language is not yet available.",
+ "Barriere melden": "Report a barrier",
+ "Stossen Sie auf eine Barriere? Melden Sie sie uns, damit wir sie beheben können.": "Have you come across a barrier? Let us know so we can fix it."
 }

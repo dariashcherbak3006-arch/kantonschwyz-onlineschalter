@@ -43,7 +43,12 @@ export function GemeindeSelect() {
 
   useEffect(() => {
     if (!open) return
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      // Focus in the menu would be lost when it unmounts
+      if (ref.current?.contains(document.activeElement)) ref.current.querySelector('button')?.focus()
+      setOpen(false)
+    }
     const onDown = (e: PointerEvent) => !ref.current?.contains(e.target as Node) && setOpen(false)
     addEventListener('keydown', onKey)
     addEventListener('pointerdown', onDown)

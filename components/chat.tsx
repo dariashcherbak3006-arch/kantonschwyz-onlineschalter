@@ -53,7 +53,11 @@ export function ChatLog({ messages, loading }: { messages: Msg[]; loading: boole
     <div className="chat" aria-live="polite">
       {messages.map((m, i) => (
         <div key={i} className={`chat__msg chat__msg--${m.role} ${m.role === 'assistant' ? 'glass' : ''}`}>
-          <p>{m.content}</p>
+          <p>
+            {/* Who is speaking is otherwise only shown by bubble side and colour */}
+            <span className="sr-only">{m.role === 'user' ? t('Sie:') : 'Schwyzi:'} </span>
+            {m.content}
+          </p>
           {!!m.links?.length && (
             <div className="chat__links">
               {m.links.map((l) => (
@@ -67,10 +71,11 @@ export function ChatLog({ messages, loading }: { messages: Msg[]; loading: boole
         </div>
       ))}
       {loading && (
-        <div className="chat__msg chat__msg--assistant glass chat__typing" aria-label={t('Assistent schreibt')}>
+        <div className="chat__msg chat__msg--assistant glass chat__typing">
           <span />
           <span />
           <span />
+          <span className="sr-only">{t('Assistent schreibt')}</span>
         </div>
       )}
       <div ref={endRef} />

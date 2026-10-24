@@ -19,7 +19,13 @@ export default function Header() {
   // ponytail: click-only menu (no hover) so touch and mouse behave the same.
   useEffect(() => {
     const close = () => (setSearching(false), setLangOpen(false))
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close()
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      // Focus inside a panel that is about to unmount goes back to the panel's toggle
+      const inPanel = (document.activeElement as HTMLElement | null)?.closest('#header-search, #lang-menu')
+      if (inPanel) ref.current?.querySelector<HTMLElement>(inPanel.id === 'lang-menu' ? '.lang__btn' : '.site-header__search-btn')?.focus()
+      close()
+    }
     const onDown = (e: PointerEvent) => !ref.current?.contains(e.target as Node) && close()
     window.addEventListener('keydown', onKey)
     window.addEventListener('pointerdown', onDown)
@@ -65,7 +71,7 @@ export default function Header() {
             className="lang__btn glass"
             aria-expanded={langOpen}
             aria-controls="lang-menu"
-            aria-label={`${t('Sprache')}: ${LANG_NAMES[lang]}`}
+            aria-label={`${lang.toUpperCase()}, ${t('Sprache')}: ${LANG_NAMES[lang]}`}
             onClick={() => (setLangOpen(!langOpen), setSearching(false))}
           >
             <GlobeIcon />
@@ -151,6 +157,10 @@ function SearchBox({ id, autoFocus }: { id: string; autoFocus?: boolean }) {
           onChange={(e) => setQ(e.target.value)}
           placeholder={t('z. B. Umzug, Steuern, Hund …')}
         />
+        {/* Always mounted so screen readers announce the hit count as it changes */}
+        <p role="status" className="sr-only">
+          {q.trim() && `${hits.length} ${t(hits.length === 1 ? 'Dienstleistung' : 'Dienstleistungen')}`}
+        </p>
         {q && (
           <button
             type="button"

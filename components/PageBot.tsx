@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { SendIcon, SparkIcon } from './icons'
 import { useT } from './i18n'
 import { AiNotice, ChatLog, useChat } from './chat'
@@ -11,14 +11,19 @@ const SUGGESTIONS = ['Welche Unterlagen brauche ich?', 'Was kostet das?', 'Wie l
 export default function PageBot({ serviceId }: { serviceId: number }) {
   const [open, setOpen] = useState(false)
   const [input, setInput] = useState('')
+  const fab = useRef<HTMLButtonElement>(null)
   const { messages, loading, ask } = useChat(serviceId)
   const { t } = useT()
 
+  // Closing unmounts the dialog, so focus returns to the button that opened it
+  const close = () => (setOpen(false), fab.current?.focus())
+
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close()
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  }, [open])
 
   function send(text: string) {
     ask(text)
@@ -37,7 +42,7 @@ export default function PageBot({ serviceId }: { serviceId: number }) {
           <div className="bot__head">
             <SparkIcon />
             <strong>{t('Fragen zu dieser Seite')}</strong>
-            <button className="login__close" aria-label={t('Schliessen')} onClick={() => setOpen(false)}>
+            <button className="login__close" aria-label={t('Schliessen')} onClick={close}>
               ×
             </button>
           </div>
@@ -77,6 +82,7 @@ export default function PageBot({ serviceId }: { serviceId: number }) {
         </div>
       )}
       <button
+        ref={fab}
         className="bot-fab"
         aria-expanded={open}
         aria-controls="page-bot"

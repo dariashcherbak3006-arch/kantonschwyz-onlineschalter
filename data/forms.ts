@@ -44,6 +44,8 @@ export type Field = {
   accept?: string
   readonly?: boolean
   compute?: { year?: number; dateDiff?: [string, string]; plus?: number }
+  // HTML autocomplete token (WCAG 1.3.5), only on fields about the applicant
+  autocomplete?: string
 }
 
 // title = label under the progress dot, intro = heading on the step, note = HTML under the heading
@@ -69,10 +71,36 @@ const gemeindeStep = (options: string[]): Step => ({
   ]
 })
 
+// Autofill only where the applicant enters their own data; other steps (deviating sender,
+// the person looked up, delivery address, driver, the dog's "Name") stay off.
+const OWN_STEP = /^(Personalien|Antragstellende Person|Mieterin \/ Mieter|Angaben zum Hauptwohnsitz)/
+const AUTOCOMPLETE: Record<string, string> = {
+  Anrede: 'honorific-prefix',
+  Vorname: 'given-name',
+  Name: 'family-name',
+  Firma: 'organization',
+  Geburtsdatum: 'bday',
+  Geburtstag: 'bday',
+  Adresse: 'address-line1',
+  Strasse: 'address-line1',
+  'Strasse / Nr.': 'address-line1',
+  PLZ: 'postal-code',
+  Postleitzahl: 'postal-code',
+  Ort: 'address-level2',
+  Land: 'country-name',
+  'E-Mail': 'email',
+  Telefon: 'tel-national',
+  Vorwahl: 'tel-country-code'
+}
+
+const withAutocomplete = (s: Step): Step =>
+  OWN_STEP.test(s.title) ? { ...s, fields: s.fields.map((f) => ({ ...f, autocomplete: AUTOCOMPLETE[f.label] })) } : s
+
 export const FORMS: Record<number, { title: string; steps: Step[] }> = Object.fromEntries(
   Object.entries(CONVERTED).map(([id, form]) => {
     const sv = services.find((s) => s.id === Number(id))!
-    const steps = sv.gemeinden ? [gemeindeStep(sv.gemeinden), ...form.steps] : form.steps
+    const own = form.steps.map(withAutocomplete)
+    const steps = sv.gemeinden ? [gemeindeStep(sv.gemeinden), ...own] : own
     return [id, { title: sv.title, steps }]
   })
 )

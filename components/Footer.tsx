@@ -98,6 +98,9 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a href="/barrierefreiheit">{t('Barrierefreiheit')}</a>
+            </li>
+            <li>
               <a href="https://www.sz.ch/" {...newTab}>
                 {t('Webseite Kanton Schwyz')}
                 <ExternalIcon />

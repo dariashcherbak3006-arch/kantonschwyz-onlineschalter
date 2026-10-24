@@ -97,19 +97,21 @@ export default function Hero() {
         </nav>
       )}
 
-      {!chatting && (
+      {/* The page keeps its h1 while chatting, just not visibly */}
+      {chatting ? (
+        <h1 className="sr-only">{t('Wie können wir Ihnen helfen?')}</h1>
+      ) : (
         <div className="hero__intro">
           <h1>{t('Wie können wir Ihnen helfen?')}</h1>
           <p>{t('Alle Online-Dienstleistungen des Kantons Schwyz an einem Ort.')}</p>
         </div>
       )}
 
-      <div className="mode-switch glass" role="radiogroup" aria-label={t('Suchmodus')}>
+      <div className="mode-switch glass" role="group" aria-label={t('Suchmodus')}>
         {(['search', 'ai'] as const).map((m) => (
           <button
             key={m}
-            role="radio"
-            aria-checked={mode === m}
+            aria-pressed={mode === m}
             className="mode-switch__opt"
             onClick={() => setMode(m)}
           >
@@ -191,7 +193,7 @@ export default function Hero() {
         <div className="results">
           <h2 className="results__title">{t('Liste der Dienstleistungen')}</h2>
           <div className="results__bar">
-            <p>
+            <p role="status">
               {hits.length} {t(hits.length === 1 ? 'Dienstleistung' : 'Dienstleistungen')}
             </p>
             {filtered && (
@@ -200,18 +202,18 @@ export default function Hero() {
               </button>
             )}
             <GemeindeSelect />
-            <div className="view-toggle glass" role="radiogroup" aria-label={t('Zuständigkeit')}>
+            <div className="view-toggle glass" role="group" aria-label={t('Zuständigkeit')}>
               {(['all', 'kommunal', 'kantonal'] as const).map((l) => (
-                <button key={l} role="radio" aria-checked={level === l} onClick={() => setLevel(l)}>
+                <button key={l} aria-pressed={level === l} onClick={() => setLevel(l)}>
                   {t(l === 'all' ? 'Alle' : l === 'kommunal' ? 'Kommunal' : 'Kantonal')}
                 </button>
               ))}
             </div>
-            <div className="view-toggle glass" role="radiogroup" aria-label={t('Ansicht')}>
-              <button role="radio" aria-checked={view === 'cards'} onClick={() => setView('cards')}>
+            <div className="view-toggle glass" role="group" aria-label={t('Ansicht')}>
+              <button aria-pressed={view === 'cards'} onClick={() => setView('cards')}>
                 <GridIcon /> {t('Kacheln')}
               </button>
-              <button role="radio" aria-checked={view === 'list'} onClick={() => setView('list')}>
+              <button aria-pressed={view === 'list'} onClick={() => setView('list')}>
                 <ListIcon /> {t('Liste')}
               </button>
             </div>
